@@ -96,13 +96,13 @@ Attack types values:
               <attack_type>Injection Attempt</attack_type>
             </xsl:when>
             <xsl:when test='contains($Attack, 'HyperText Transfer Protocol (HTTP) Information')'>
-              <attack_type>Other Application Attacks</attack_type>
+              <attack_type>Information Leakage</attack_type>
             </xsl:when>
             <xsl:when test='contains($Attack, 'HSTS')'>
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
             <xsl:when test='contains($Attack, 'HTTP Server Type and Version')'>
-              <attack_type>Other Application Attacks</attack_type>
+              <attack_type>Information Leakage</attack_type>
             </xsl:when>
             <xsl:when test='contains($Attack, 'Web Server Allows Password Auto-Completion')'>
               <attack_type>Autocomplete not disabled on login form</attack_type>
@@ -112,6 +112,24 @@ Attack types values:
             </xsl:when>
             <xsl:when test='contains($Attack, 'Clickjacking')'>
               <attack_type>Clickjacking</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'Missing or Permissive X-Frame-Options HTTP Response Header')'>
+              <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'Web mirroring')'>
+              <attack_type>Web Scraping</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'Web Server Directory Enumeration')'>
+              <attack_type>Path Traversal</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'SSL')'>
+              <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'TLS')'>
+              <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'Service Detection')'>
+              <attack_type>Information Leakage</attack_type>
             </xsl:when>
             <xsl:otherwise>
               <attack_type>Other Application Attacks</attack_type>
