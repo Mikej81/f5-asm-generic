@@ -104,6 +104,15 @@ Attack types values:
             <xsl:when test='contains($Attack, 'HTTP Server Type and Version')'>
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
+            <xsl:when test='contains($Attack, 'Web Server Allows Password Auto-Completion')'>
+              <attack_type>Autocomplete not disabled on login form</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'Web Application Sitemap')'>
+              <attack_type>Predictable Resource Location</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'Clickjacking')'>
+              <attack_type>Clickjacking</attack_type>
+            </xsl:when>
             <xsl:otherwise>
               <attack_type>Other Application Attacks</attack_type>
           </xsl:otherwise>
