@@ -1,0 +1,1781 @@
+<?xml version="1.0"?>
+<scanner_vulnerabilities xmlns:foo="http://www.foo.org/" xmlns:bar="http://www.bar.org"><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Timeout</name><url>google-gruyere.appspot.com</url><parameter>The following tests timed out without finding any flaw :
+- XSS (on HTTP headers)
+- blind SQL injection
+- local file inclusion
+- blind SQL injection (time based)
+- unseen parameters
+- directory traversal (extended test)
+- directory traversal
+- arbitrary command execution
+- SQL injection (on HTTP headers)
+- SQL injection
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>XML Injection</attack_type><name>CGI Generic XML Injection</name><url>google-gruyere.appspot.com</url><parameter>
+Using the POST HTTP method, Nessus found that :
+
++ The following resources may be vulnerable to XML injection :
+
++ The 'uid' parameter of the /396553048221854312260983266767337236027/login CGI :
+
+/396553048221854312260983266767337236027/login [pw=346057&amp;uid=&lt;/ foo&gt;]
+
+-------- output --------
+HTTP/1.1 200 OK
+-------- vs --------
+------------------------
+
+</parameter><cookie/><threat>Medium</threat><score>6.8</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Accessible Backups</name><url>google-gruyere.appspot.com</url><parameter>
+Nessus was able to identify the following archive file on the
+remote web server :
+
+ZIP Archive :
+   https://172.217.3.212/gruyere-code.zip
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server robots.txt Information Disclosure</name><url>google-gruyere.appspot.com</url><parameter>Contents of robots.txt :
+
+User-agent: *
+Disallow: /0
+Disallow: /1
+Disallow: /2
+Disallow: /3
+Disallow: /4
+Disallow: /5
+Disallow: /6
+Disallow: /7
+Disallow: /8
+Disallow: /9
+Disallow: /start
+Disallow: /resetbutton
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Load Estimation (all tests)</name><url>google-gruyere.appspot.com</url><parameter>Here are the estimated number of requests in miscellaneous modes
+for one method only (GET or POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+cross-site scripting (comprehensive test): S=147        SP=315       AP=315       SC=357       AC=357
+cross-site scripting (quick test)        : S=11         SP=11        AP=11        SC=11        AC=11
+persistent XSS                           : S=28         SP=60        AP=60        SC=68        AC=68
+arbitrary command execution              : S=154        SP=330       AP=330       SC=374       AC=374
+web code injection                       : S=7          SP=15        AP=15        SC=17        AC=17
+HTML injection                           : S=5          SP=5         AP=5         SC=5         AC=5
+arbitrary command execution (time based) : S=42         SP=90        AP=90        SC=102       AC=102
+script injection                         : S=1          SP=1         AP=1         SC=1         AC=1
+XML injection                            : S=7          SP=15        AP=15        SC=17        AC=17
+unseen parameters                        : S=245        SP=525       AP=525       SC=595       AC=595
+directory traversal (write access)       : S=14         SP=30        AP=30        SC=34        AC=34
+SQL injection (2nd order)                : S=7          SP=15        AP=15        SC=17        AC=17
+on site request forgery                  : S=1          SP=1         AP=1         SC=1         AC=1
+blind SQL injection (4 requests)         : S=28         SP=60        AP=60        SC=68        AC=68
+HTTP response splitting                  : S=9          SP=9         AP=9         SC=9         AC=9
+directory traversal (extended test)      : S=357        SP=765       AP=765       SC=867       AC=867
+header injection                         : S=2          SP=2         AP=2         SC=2         AC=2
+cookie manipulation                      : S=2          SP=2         AP=2         SC=2         AC=2
+injectable parameter                     : S=14         SP=30        AP=30        SC=34        AC=34
+local file inclusion                     : S=28         SP=60        AP=60        SC=68        AC=68
+directory traversal                      : S=203        SP=435       AP=435       SC=493       AC=493
+cross-site scripting (extended patterns) : S=7          SP=7         AP=7         SC=7         AC=7
+blind SQL injection                      : S=84         SP=180       AP=180       SC=204       AC=204
+SQL injection                            : S=203        SP=435       AP=435       SC=493       AC=493
+SSI injection                            : S=21         SP=45        AP=45        SC=51        AC=51
+format string                            : S=14         SP=30        AP=30        SC=34        AC=34
+
+All tests                                : S=1641       SP=3473      AP=3473      SC=3931      AC=3931
+
+Here are the estimated number of requests in miscellaneous modes
+for both methods (GET and POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+cross-site scripting (comprehensive test): S=294        SP=630       AP=630       SC=714       AC=714
+cross-site scripting (quick test)        : S=22         SP=22        AP=22        SC=22        AC=22
+persistent XSS                           : S=56         SP=120       AP=120       SC=136       AC=136
+arbitrary command execution              : S=308        SP=660       AP=660       SC=748       AC=748
+web code injection                       : S=14         SP=30        AP=30        SC=34        AC=34
+HTML injection                           : S=10         SP=10        AP=10        SC=10        AC=10
+arbitrary command execution (time based) : S=84         SP=180       AP=180       SC=204       AC=204
+script injection                         : S=2          SP=2         AP=2         SC=2         AC=2
+XML injection                            : S=14         SP=30        AP=30        SC=34        AC=34
+unseen parameters                        : S=490        SP=1050      AP=1050      SC=1190      AC=1190
+directory traversal (write access)       : S=28         SP=60        AP=60        SC=68        AC=68
+SQL injection (2nd order)                : S=14         SP=30        AP=30        SC=34        AC=34
+on site request forgery                  : S=2          SP=2         AP=2         SC=2         AC=2
+blind SQL injection (4 requests)         : S=56         SP=120       AP=120       SC=136       AC=136
+HTTP response splitting                  : S=18         SP=18        AP=18        SC=18        AC=18
+directory traversal (extended test)      : S=714        SP=1530      AP=1530      SC=1734      AC=1734
+header injection                         : S=4          SP=4         AP=4         SC=4         AC=4
+cookie manipulation                      : S=4          SP=4         AP=4         SC=4         AC=4
+injectable parameter                     : S=28         SP=60        AP=60        SC=68        AC=68
+local file inclusion                     : S=56         SP=120       AP=120       SC=136       AC=136
+directory traversal                      : S=406        SP=870       AP=870       SC=986       AC=986
+cross-site scripting (extended patterns) : S=14         SP=14        AP=14        SC=14        AC=14
+blind SQL injection                      : S=168        SP=360       AP=360       SC=408       AC=408
+SQL injection                            : S=406        SP=870       AP=870       SC=986       AC=986
+SSI injection                            : S=42         SP=90        AP=90        SC=102       AC=102
+format string                            : S=28         SP=60        AP=60        SC=68        AC=68
+
+All tests                                : S=3282       SP=6946      AP=6946      SC=7862      AC=7862
+
+Your mode : all_combinations, GET and POST, thorough tests, Paranoid.
+Maximum number of requests : 7862
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic HTML Injections (quick test)</name><url>google-gruyere.appspot.com</url><parameter>
+Using the GET HTTP method, Nessus found that :
+
++ The following resources may be vulnerable to HTML injection :
+
++ The 'uid' parameter of the /396553048221854312260983266767337236027/snippets.gtl CGI :
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=%00&lt;&lt;&lt;&lt;"jlfalq
+%20&gt;&gt;&gt;
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+.&lt;&lt;&lt;&lt;"jlfalq &gt;&gt;&gt;
+------------------------
+
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Injectable Parameter</name><url>google-gruyere.appspot.com</url><parameter>
+Using the GET HTTP method, Nessus found that :
+
++ The following resources may be vulnerable to injectable parameter :
+
++ The 'uid' parameter of the /396553048221854312260983266767337236027/snippets.gtl CGI :
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=%00ubxtmk
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+.ubxtmk
+------------------------
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=%00ubxtmk&amp;uid=
+cheddar
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+.ubxtmk
+------------------------
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=ubxtmk
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+ubxtmk
+------------------------
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=ubxtmk&amp;uid=che
+ddar
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+ubxtmk
+------------------------
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HTTP Methods Allowed (per directory)</name><url>google-gruyere.appspot.com</url><parameter>Based on the response to an OPTIONS request :
+
+  - HTTP methods  POST GET are allowed on :
+
+    //0
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    /1
+    /10
+    /2
+    /3
+    /396553048221854312260983266767337236027
+    /4
+    /5
+    /6
+    /7
+    /8
+    /9
+
+  - HTTP method GET is allowed on :
+
+    /
+    /code
+
+
+Based on tests of each method :
+
+  - HTTP methods BCOPY BDELETE BMOVE BPROPFIND BPROPPATCH DEBUG
+    DELETE GET HEAD INDEX NOTIFY OPTIONS ORDERPATCH POLL POST PUT
+    RPC_IN_DATA RPC_OUT_DATA SEARCH SUBSCRIBE UNSUBSCRIBE
+    X-MS-ENUMATTS are allowed on :
+
+    /
+
+  - HTTP methods BCOPY BDELETE BMOVE BPROPFIND BPROPPATCH DEBUG GET
+    INDEX NOTIFY ORDERPATCH POLL POST RPC_IN_DATA RPC_OUT_DATA SEARCH
+    SUBSCRIBE UNSUBSCRIBE X-MS-ENUMATTS are allowed on :
+
+    //0
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    /1
+    /10
+    /2
+    /3
+    /396553048221854312260983266767337236027
+    /4
+    /5
+    /6
+    /7
+    /8
+    /9
+
+  - HTTP methods BCOPY BDELETE BMOVE BPROPFIND BPROPPATCH DEBUG GET
+    INDEX NOTIFY ORDERPATCH POLL RPC_IN_DATA RPC_OUT_DATA SEARCH
+    SUBSCRIBE UNSUBSCRIBE X-MS-ENUMATTS are allowed on :
+
+    /code
+
+  - Invalid/unknown HTTP methods are allowed on :
+
+    /
+    //0
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    /1
+    /10
+    /2
+    /3
+    /396553048221854312260983266767337236027
+    /4
+    /5
+    /6
+    /7
+    /8
+    /9
+    /code
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic XSS</name><url>google-gruyere.appspot.com</url><parameter>------------------------------ Request #1 ------------------------------
+
+The request string used to detect this flaw was :
+
+/396553048221854312260983266767337236027/&lt;script&gt;cross_site_scripting.nasl&lt;/script&gt;.asp
+
+The output was :
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: aca63280876390843466996e54a93432
+Date: Tue, 29 Aug 2017 13:39:23 GMT
+Server: Google Frontend
+Content-Length: 2281
+Alt-Svc: quic=":443"; ma=2592000; v="39,38,37,35"
+Connection: close
+
+
+
+
+&lt;div class='message'&gt;Unrecognized file type (/&lt;script&gt;cross_site_scripti
+ng.nasl&lt;/script&gt;.asp).&lt;/div&gt;
+
+
+
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic Cookie Injection</name><url>google-gruyere.appspot.com</url><parameter>
+The request string used to detect this flaw was :
+
+/396553048221854312260983266767337236027/&lt;script&gt;document.cookie=%22testista=9881;%22&lt;/script&gt;
+
+The output was :
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: f506602524e9f6b9c4407e363dce4b91
+Date: Tue, 29 Aug 2017 13:39:21 GMT
+Server: Google Frontend
+Content-Length: 2275
+Alt-Svc: quic=":443"; ma=2592000; v="39,38,37,35"
+Connection: close
+
+
+[...]
+
+
+
+&lt;div class='message'&gt;Invalid request: /&lt;script&gt;document.cookie="testista=9881;"&lt;/script&gt;&lt;/div&gt;
+
+
+[...]
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HyperText Transfer Protocol (HTTP) Information</name><url>google-gruyere.appspot.com</url><parameter>
+Protocol version : HTTP/1.1
+SSL : yes
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Cache-Control: no-cache
+  Pragma: no-cache
+  Content-Type: text/html; charset=utf-8
+  X-Cloud-Trace-Context: 1d31a7e5360a43c4dc99a88172195143
+  Date: Tue, 29 Aug 2017 13:38:36 GMT
+  Server: Google Frontend
+  Content-Length: 11506
+  Alt-Svc: quic=":443"; ma=2592000; v="39,38,37,35"
+  Connection: close
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HSTS Missing From HTTPS Server</name><url>google-gruyere.appspot.com</url><parameter>
+  The remote HTTPS server does not send the HTTP
+  "Strict-Transport-Security" header.
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HTTP Server Type and Version</name><url>google-gruyere.appspot.com</url><parameter>The remote web server type is :
+
+Google Frontend</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Allows Password Auto-Completion</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
+Destination Page: /396553048221854312260983266767337236027/login
+
+Page : /396553048221854312260983266767337236027/newaccount.gtl
+Destination Page: /396553048221854312260983266767337236027/saveprofile
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Sitemap</name><url>google-gruyere.appspot.com</url><parameter>
+The following sitemap was created from crawling linkable content on the target host :
+
+  - https://172.217.3.212/
+  - https://172.217.3.212//0
+  - https://172.217.3.212//1
+  - https://172.217.3.212//2
+  - https://172.217.3.212//3
+  - https://172.217.3.212//4
+  - https://172.217.3.212//5
+  - https://172.217.3.212//6
+  - https://172.217.3.212//7
+  - https://172.217.3.212//8
+  - https://172.217.3.212//9
+  - https://172.217.3.212/1
+  - https://172.217.3.212/10
+  - https://172.217.3.212/2
+  - https://172.217.3.212/3
+  - https://172.217.3.212/396553048221854312260983266767337236027/
+  - https://172.217.3.212/396553048221854312260983266767337236027/login
+  - https://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - https://172.217.3.212/396553048221854312260983266767337236027/saveprofile
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - https://172.217.3.212/4
+  - https://172.217.3.212/5
+  - https://172.217.3.212/6
+  - https://172.217.3.212/7
+  - https://172.217.3.212/8
+  - https://172.217.3.212/9
+  - https://172.217.3.212/code
+  - https://172.217.3.212/code/
+  - https://172.217.3.212/code/?data.py
+  - https://172.217.3.212/code/?gruyere.py
+  - https://172.217.3.212/code/?gtl.py
+  - https://172.217.3.212/code/?resoources/dump.gtl
+  - https://172.217.3.212/code/?resources/dump.gtl
+  - https://172.217.3.212/code/?resources/editprofile.gtl
+  - https://172.217.3.212/code/?resources/error.gtl
+  - https://172.217.3.212/code/?resources/feed.gtl
+  - https://172.217.3.212/code/?resources/home.gtl
+  - https://172.217.3.212/code/?resources/manage.gtl
+  - https://172.217.3.212/code/?resources/menubar.gtl
+  - https://172.217.3.212/code/?sanitize.py
+  - https://172.217.3.212/code/data.py
+  - https://172.217.3.212/code/gruyere.py
+  - https://172.217.3.212/code/gtl.py
+  - https://172.217.3.212/code/resources/base.css
+  - https://172.217.3.212/code/resources/dump.gtl
+  - https://172.217.3.212/code/resources/editprofile.gtl
+  - https://172.217.3.212/code/resources/error.gtl
+  - https://172.217.3.212/code/resources/feed.gtl
+  - https://172.217.3.212/code/resources/home.gtl
+  - https://172.217.3.212/code/resources/lib.js
+  - https://172.217.3.212/code/resources/login.gtl
+  - https://172.217.3.212/code/resources/manage.gtl
+  - https://172.217.3.212/code/resources/menubar.gtl
+  - https://172.217.3.212/code/resources/newaccount.gtl
+  - https://172.217.3.212/code/resources/newsnippet.gtl
+  - https://172.217.3.212/code/resources/showprofile.gtl
+  - https://172.217.3.212/code/resources/snippets.gtl
+  - https://172.217.3.212/code/resources/upload.gtl
+  - https://172.217.3.212/code/resources/upload2.gtl
+  - https://172.217.3.212/code/sanitize.py
+  - https://172.217.3.212/code/secret.txt
+  - https://172.217.3.212/gruyere-code.zip
+  - https://172.217.3.212/part1
+  - https://172.217.3.212/part2
+  - https://172.217.3.212/part3
+  - https://172.217.3.212/part4
+  - https://172.217.3.212/part5
+  - https://172.217.3.212/resetbutton/396553048221854312260983266767337236027
+  - https://172.217.3.212/start
+  - https://172.217.3.212/static/codeindex.html
+  - https://172.217.3.212/static/codelab.css
+  - https://172.217.3.212/static/gruyere.png
+
+Attached is a copy of the sitemap file.
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Potentially Vulnerable to Clickjacking</name><url>google-gruyere.appspot.com</url><parameter>
+The following pages do not use a clickjacking mitigation response header and contain a clickable event :
+
+  - https://172.217.3.212/396553048221854312260983266767337236027/
+  - https://172.217.3.212/396553048221854312260983266767337236027/login
+  - https://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - https://172.217.3.212/part1
+  - https://172.217.3.212/part2
+  - https://172.217.3.212/part3
+  - https://172.217.3.212/part4
+  - https://172.217.3.212/part5
+  - https://172.217.3.212/resetbutton/396553048221854312260983266767337236027
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Missing or Permissive X-Frame-Options HTTP Response Header</name><url>google-gruyere.appspot.com</url><parameter>
+The following pages do not set a X-Frame-Options response header or set a permissive policy:
+
+  - https://172.217.3.212/
+  - https://172.217.3.212//0
+  - https://172.217.3.212//1
+  - https://172.217.3.212//2
+  - https://172.217.3.212//3
+  - https://172.217.3.212//4
+  - https://172.217.3.212//5
+  - https://172.217.3.212//6
+  - https://172.217.3.212//7
+  - https://172.217.3.212//8
+  - https://172.217.3.212//9
+  - https://172.217.3.212/1
+  - https://172.217.3.212/10
+  - https://172.217.3.212/2
+  - https://172.217.3.212/3
+  - https://172.217.3.212/396553048221854312260983266767337236027/
+  - https://172.217.3.212/396553048221854312260983266767337236027/login
+  - https://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - https://172.217.3.212/396553048221854312260983266767337236027/saveprofile
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - https://172.217.3.212/4
+  - https://172.217.3.212/5
+  - https://172.217.3.212/6
+  - https://172.217.3.212/7
+  - https://172.217.3.212/8
+  - https://172.217.3.212/9
+  - https://172.217.3.212/code
+  - https://172.217.3.212/code/
+  - https://172.217.3.212/code/?data.py
+  - https://172.217.3.212/code/?gruyere.py
+  - https://172.217.3.212/code/?gtl.py
+  - https://172.217.3.212/code/?resoources/dump.gtl
+  - https://172.217.3.212/code/?resources/dump.gtl
+  - https://172.217.3.212/code/?resources/editprofile.gtl
+  - https://172.217.3.212/code/?resources/error.gtl
+  - https://172.217.3.212/code/?resources/feed.gtl
+  - https://172.217.3.212/code/?resources/home.gtl
+  - https://172.217.3.212/code/?resources/manage.gtl
+  - https://172.217.3.212/code/?resources/menubar.gtl
+  - https://172.217.3.212/code/?sanitize.py
+  - https://172.217.3.212/code/data.py
+  - https://172.217.3.212/code/gruyere.py
+  - https://172.217.3.212/code/gtl.py
+  - https://172.217.3.212/code/resources/base.css
+  - https://172.217.3.212/code/resources/dump.gtl
+  - https://172.217.3.212/code/resources/editprofile.gtl
+  - https://172.217.3.212/code/resources/error.gtl
+  - https://172.217.3.212/code/resources/feed.gtl
+  - https://172.217.3.212/code/resources/home.gtl
+  - https://172.217.3.212/code/resources/lib.js
+  - https://172.217.3.212/code/resources/login.gtl
+  - https://172.217.3.212/code/resources/manage.gtl
+  - https://172.217.3.212/code/resources/menubar.gtl
+  - https://172.217.3.212/code/resources/newaccount.gtl
+  - https://172.217.3.212/code/resources/newsnippet.gtl
+  - https://172.217.3.212/code/resources/showprofile.gtl
+  - https://172.217.3.212/code/resources/snippets.gtl
+  - https://172.217.3.212/code/resources/upload.gtl
+  - https://172.217.3.212/code/resources/upload2.gtl
+  - https://172.217.3.212/code/sanitize.py
+  - https://172.217.3.212/code/secret.txt
+  - https://172.217.3.212/part1
+  - https://172.217.3.212/part2
+  - https://172.217.3.212/part3
+  - https://172.217.3.212/part4
+  - https://172.217.3.212/part5
+  - https://172.217.3.212/resetbutton/396553048221854312260983266767337236027
+  - https://172.217.3.212/start
+  - https://172.217.3.212/static/codeindex.html
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>External URLs</name><url>google-gruyere.appspot.com</url><parameter>
+37 external URLs were gathered on this web server :
+URL...                                  - Seen on...
+
+http://www.json.org/                    -
+https://creativecommons.org/licenses/by-nd/3.0/us/ -
+https://creativecommons.org/licenses/by/3.0/us/ -
+
+https://images.google.com/?q=cheddar+cheese -
+https://news.google.com/news/search?q=brie -
+https://portswigger.net/burp/           -
+https://security.googleblog.com/        -
+https://svn.python.org/projects/python/trunk/Objects/stringobject.c -
+https://www.google.com/about/appsecurity/ -
+https://www.google.com/intl/en/policies/terms/ -
+https://www.google.com/search?q=%22cross+site+script+inclusion%22 -
+https://www.google.com/search?q=%22defense+in+depth%22+security -
+https://www.google.com/search?q=E4X+markup+security -
+https://www.google.com/search?q=XSS+auto+escaping -
+https://www.google.com/search?q=all+your+base+are+belong+to+us -
+https://www.google.com/search?q=blaster+worm -
+https://www.google.com/search?q=buffer+overflow -
+https://www.google.com/search?q=choosing+a+good+password -
+https://www.google.com/search?q=code+red+worm -
+https://www.google.com/search?q=fuzz+testing -
+https://www.google.com/search?q=http+cookies -
+https://www.google.com/search?q=integer+overflow+vulnerability -
+https://www.google.com/search?q=least+privileges -
+https://www.google.com/search?q=password+hashing -
+https://www.google.com/search?q=preventing+(XSRF+OR+CSRF) -
+https://www.google.com/search?q=same+origin+policy -
+https://www.google.com/search?q=sanitize+html -
+https://www.google.com/search?q=sql+injection -
+https://www.google.com/search?q=sql+slammer -
+https://www.google.com/search?q=understanding+cross-site+scripting -
+https://www.google.com/search?q=unsafe+string+functions -
+https://www.google.com/search?q=utf-7   -
+https://www.kb.cert.org/vuls/           -
+https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project -
+https://www.python.org/downloads/       -
+https://www.w3.org/TR/html40/index/attributes.html -
+https://xkcd.com/327/                   -
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked Secure</name><url>google-gruyere.appspot.com</url><parameter>
+The following cookie does not set the secure cookie flag :
+
+Name : GRUYERE_ID
+Path : /
+Value : 396553048221854312260983266767337236027
+Domain :
+Version : 1
+Expires :
+Comment :
+Secure : 0
+Httponly : 0
+Port :
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked HttpOnly</name><url>google-gruyere.appspot.com</url><parameter>
+The following cookie does not set the HttpOnly cookie flag :
+
+Name : GRUYERE_ID
+Path : /
+Value : 396553048221854312260983266767337236027
+Domain :
+Version : 1
+Expires :
+Comment :
+Secure : 0
+Httponly : 0
+Port :
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Missing or Permissive Content-Security-Policy HTTP Response Header</name><url>google-gruyere.appspot.com</url><parameter>
+The following pages do not set a Content-Security-Policy response header or set a permissive policy:
+
+  - https://172.217.3.212/
+  - https://172.217.3.212//0
+  - https://172.217.3.212//1
+  - https://172.217.3.212//2
+  - https://172.217.3.212//3
+  - https://172.217.3.212//4
+  - https://172.217.3.212//5
+  - https://172.217.3.212//6
+  - https://172.217.3.212//7
+  - https://172.217.3.212//8
+  - https://172.217.3.212//9
+  - https://172.217.3.212/1
+  - https://172.217.3.212/10
+  - https://172.217.3.212/2
+  - https://172.217.3.212/3
+  - https://172.217.3.212/396553048221854312260983266767337236027/
+  - https://172.217.3.212/396553048221854312260983266767337236027/login
+  - https://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - https://172.217.3.212/396553048221854312260983266767337236027/saveprofile
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - https://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - https://172.217.3.212/4
+  - https://172.217.3.212/5
+  - https://172.217.3.212/6
+  - https://172.217.3.212/7
+  - https://172.217.3.212/8
+  - https://172.217.3.212/9
+  - https://172.217.3.212/code
+  - https://172.217.3.212/code/
+  - https://172.217.3.212/code/?data.py
+  - https://172.217.3.212/code/?gruyere.py
+  - https://172.217.3.212/code/?gtl.py
+  - https://172.217.3.212/code/?resoources/dump.gtl
+  - https://172.217.3.212/code/?resources/dump.gtl
+  - https://172.217.3.212/code/?resources/editprofile.gtl
+  - https://172.217.3.212/code/?resources/error.gtl
+  - https://172.217.3.212/code/?resources/feed.gtl
+  - https://172.217.3.212/code/?resources/home.gtl
+  - https://172.217.3.212/code/?resources/manage.gtl
+  - https://172.217.3.212/code/?resources/menubar.gtl
+  - https://172.217.3.212/code/?sanitize.py
+  - https://172.217.3.212/code/data.py
+  - https://172.217.3.212/code/gruyere.py
+  - https://172.217.3.212/code/gtl.py
+  - https://172.217.3.212/code/resources/base.css
+  - https://172.217.3.212/code/resources/dump.gtl
+  - https://172.217.3.212/code/resources/editprofile.gtl
+  - https://172.217.3.212/code/resources/error.gtl
+  - https://172.217.3.212/code/resources/feed.gtl
+  - https://172.217.3.212/code/resources/home.gtl
+  - https://172.217.3.212/code/resources/lib.js
+  - https://172.217.3.212/code/resources/login.gtl
+  - https://172.217.3.212/code/resources/manage.gtl
+  - https://172.217.3.212/code/resources/menubar.gtl
+  - https://172.217.3.212/code/resources/newaccount.gtl
+  - https://172.217.3.212/code/resources/newsnippet.gtl
+  - https://172.217.3.212/code/resources/showprofile.gtl
+  - https://172.217.3.212/code/resources/snippets.gtl
+  - https://172.217.3.212/code/resources/upload.gtl
+  - https://172.217.3.212/code/resources/upload2.gtl
+  - https://172.217.3.212/code/sanitize.py
+  - https://172.217.3.212/code/secret.txt
+  - https://172.217.3.212/part1
+  - https://172.217.3.212/part2
+  - https://172.217.3.212/part3
+  - https://172.217.3.212/part4
+  - https://172.217.3.212/part5
+  - https://172.217.3.212/resetbutton/396553048221854312260983266767337236027
+  - https://172.217.3.212/start
+  - https://172.217.3.212/static/codeindex.html
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web mirroring</name><url>google-gruyere.appspot.com</url><parameter>
+Webmirror performed 79 queries in 14s (5.0642 queries per second)
+
+The following CGIs have been discovered :
+
+
++ CGI : /code/
+  Methods : GET
+  Argument :
+   Value: resources/dump.gtl
+
+
++ CGI : /396553048221854312260983266767337236027/snippets.gtl
+  Methods : GET
+  Argument : uid
+   Value: brie
+
+
++ CGI : /396553048221854312260983266767337236027/login
+  Methods : GET
+  Argument : pw
+  Argument : uid
+
+
++ CGI : /396553048221854312260983266767337236027/saveprofile
+  Methods : GET
+  Argument : action
+   Value: new
+  Argument : is_author
+   Value: True
+  Argument : pw
+  Argument : uid
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Directory Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
+The following directories were discovered:
+/1, /10, /2, /3, /4, /5, /6, /7, /8, /9, /code, //0, //1, //2, //3, //4, //5, //6, //7, //8, //9
+
+While this is not, in and of itself, a bug, you should manually inspect
+these directories to ensure that they are in compliance with company
+security standards
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL Cipher Block Chaining Cipher Suites Supported</name><url>google-gruyere.appspot.com</url><parameter>
+Here is the list of SSL CBC ciphers supported by the remote server :
+
+  Medium Strength Ciphers (&gt; 64-bit and &lt; 112-bit key, or 3DES)
+
+    TLSv1
+      DES-CBC3-SHA                 Kx=RSA         Au=RSA      Enc=3DES-CBC(168)        Mac=SHA1
+
+  High Strength Ciphers (&gt;= 112-bit key)
+
+    TLSv1
+      ECDHE-RSA-AES128-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      ECDHE-RSA-AES256-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+      AES128-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      AES256-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+
+The fields above are :
+
+  {OpenSSL ciphername}
+  Kx={key exchange}
+  Au={authentication}
+  Enc={symmetric encryption method}
+  Mac={message authentication code}
+  {export flag}
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL 64-bit Block Size Cipher Suites Supported (SWEET32)</name><url>google-gruyere.appspot.com</url><parameter>
+List of 64-bit block cipher suites supported by the remote server :
+
+  Medium Strength Ciphers (&gt; 64-bit and &lt; 112-bit key, or 3DES)
+
+    TLSv1
+      DES-CBC3-SHA                 Kx=RSA         Au=RSA      Enc=3DES-CBC(168)        Mac=SHA1
+
+The fields above are :
+
+  {OpenSSL ciphername}
+  Kx={key exchange}
+  Au={authentication}
+  Enc={symmetric encryption method}
+  Mac={message authentication code}
+  {export flag}
+</parameter><cookie/><threat>Medium</threat><score>5.0</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL Perfect Forward Secrecy Cipher Suites Supported</name><url>google-gruyere.appspot.com</url><parameter>
+Here is the list of SSL PFS ciphers supported by the remote server :
+
+  High Strength Ciphers (&gt;= 112-bit key)
+
+    TLSv1
+      ECDHE-RSA-AES128-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      ECDHE-RSA-AES256-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+
+    TLSv12
+      ECDHE-RSA-AES128-SHA256      Kx=ECDH        Au=RSA      Enc=AES-GCM(128)         Mac=SHA256
+      ECDHE-RSA-AES256-SHA384      Kx=ECDH        Au=RSA      Enc=AES-GCM(256)         Mac=SHA384
+      ECDHE-RSA-CHACHA20-POLY1305  Kx=ECDH        Au=RSA      Enc=ChaCha20-Poly1305(256)  Mac=SHA256
+
+The fields above are :
+
+  {OpenSSL ciphername}
+  Kx={key exchange}
+  Au={authentication}
+  Enc={symmetric encryption method}
+  Mac={message authentication code}
+  {export flag}
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL Medium Strength Cipher Suites Supported</name><url>google-gruyere.appspot.com</url><parameter>
+Here is the list of medium strength SSL ciphers supported by the remote server :
+
+  Medium Strength Ciphers (&gt; 64-bit and &lt; 112-bit key, or 3DES)
+
+    TLSv1
+      DES-CBC3-SHA                 Kx=RSA         Au=RSA      Enc=3DES-CBC(168)        Mac=SHA1
+
+The fields above are :
+
+  {OpenSSL ciphername}
+  Kx={key exchange}
+  Au={authentication}
+  Enc={symmetric encryption method}
+  Mac={message authentication code}
+  {export flag}
+</parameter><cookie/><threat>Medium</threat><score>5.0</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL Cipher Suites Supported</name><url>google-gruyere.appspot.com</url><parameter>
+Here is the list of SSL ciphers supported by the remote server :
+Each group is reported per SSL Version.
+
+SSL Version : TLSv12
+  Medium Strength Ciphers (&gt; 64-bit and &lt; 112-bit key, or 3DES)
+      DES-CBC3-SHA                 Kx=RSA         Au=RSA      Enc=3DES-CBC(168)        Mac=SHA1
+
+  High Strength Ciphers (&gt;= 112-bit key)
+      ECDHE-RSA-AES128-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      ECDHE-RSA-AES256-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+      AES128-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      AES256-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+      ECDHE-RSA-AES128-SHA256      Kx=ECDH        Au=RSA      Enc=AES-GCM(128)         Mac=SHA256
+      ECDHE-RSA-AES256-SHA384      Kx=ECDH        Au=RSA      Enc=AES-GCM(256)         Mac=SHA384
+      ECDHE-RSA-CHACHA20-POLY1305  Kx=ECDH        Au=RSA      Enc=ChaCha20-Poly1305(256)  Mac=SHA256
+      RSA-AES128-SHA256            Kx=RSA         Au=RSA      Enc=AES-GCM(128)         Mac=SHA256
+      RSA-AES256-SHA384            Kx=RSA         Au=RSA      Enc=AES-GCM(256)         Mac=SHA384
+
+
+SSL Version : TLSv11
+  Medium Strength Ciphers (&gt; 64-bit and &lt; 112-bit key, or 3DES)
+      DES-CBC3-SHA                 Kx=RSA         Au=RSA      Enc=3DES-CBC(168)        Mac=SHA1
+
+  High Strength Ciphers (&gt;= 112-bit key)
+      ECDHE-RSA-AES128-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      ECDHE-RSA-AES256-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+      AES128-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      AES256-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+
+
+SSL Version : TLSv1
+  Medium Strength Ciphers (&gt; 64-bit and &lt; 112-bit key, or 3DES)
+      DES-CBC3-SHA                 Kx=RSA         Au=RSA      Enc=3DES-CBC(168)        Mac=SHA1
+
+  High Strength Ciphers (&gt;= 112-bit key)
+      ECDHE-RSA-AES128-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      ECDHE-RSA-AES256-SHA         Kx=ECDH        Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+      AES128-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(128)         Mac=SHA1
+      AES256-SHA                   Kx=RSA         Au=RSA      Enc=AES-CBC(256)         Mac=SHA1
+
+The fields above are :
+
+  {OpenSSL ciphername}
+  Kx={key exchange}
+  Au={authentication}
+  Enc={symmetric encryption method}
+  Mac={message authentication code}
+  {export flag}
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL/TLS Protocol Initialization Vector Implementation Information Disclosure Vulnerability (BEAST)</name><url>google-gruyere.appspot.com</url><parameter>
+Negotiated cipher suite: ECDHE-RSA-AES128-SHA|TLSv1|Kx=ECDH|Au=RSA|Enc=AES-CBC(128)|Mac=SHA1
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL Certificate Information</name><url>google-gruyere.appspot.com</url><parameter>Subject Name:
+
+Country: US
+State/Province: California
+Locality: Mountain View
+Organization: Google Inc
+Common Name: *.appspot.com
+
+Issuer Name:
+
+Country: US
+Organization: Google Inc
+Common Name: Google Internet Authority G2
+
+Serial Number: 7D A5 A8 67 C7 99 DE C0
+
+Version: 3
+
+Signature Algorithm: SHA-256 With RSA Encryption
+
+Not Valid Before: Aug 15 16:24:30 2017 GMT
+Not Valid After: Nov 07 16:05:00 2017 GMT
+
+Public Key Info:
+
+Algorithm: RSA Encryption
+Key Length: 2048 bits
+Public Key: 00 9E 94 AC F4 38 4F 9B 78 99 9E 00 59 98 36 DE FE 3C A6 6E
+            B5 EF 46 86 73 FE 70 1D EB 3A C1 B6 7B B8 08 E6 28 A7 D7 BF
+            9E 10 D9 03 1E 9A 83 72 4F 16 6D 00 6E 4A FD D3 3E DE BE E6
+            A5 A2 B5 7D F0 32 C7 B4 A3 94 46 52 BC 1C A8 FC 17 57 3C FC
+            E7 7C C8 BD 3F C6 E1 36 E8 51 7C 8B 9B 80 38 A6 FE 9D 78 B6
+            7C CF ED 2F 1D 0F 37 A3 7C AD B1 B7 A3 AB 3E 2E 25 1E C4 7C
+            E1 5C 64 CF 60 D6 11 6A DC 69 E2 0B 57 3C 66 FF FD 83 3A 57
+            DA 02 45 23 80 FE 21 25 2A 7C 3E 7B 23 5F 35 51 56 32 35 1C
+            2C EF 20 9E 2E B8 B1 49 6D CE E4 FF 29 9E 66 38 F4 0C 26 2B
+            F1 F2 7F E8 4A B1 C5 A6 D6 5F 6C C3 2B F7 8F DE 55 CA 0A D0
+            98 D2 06 20 D0 CA 71 2E 69 03 A6 3B 9D D9 59 05 B0 55 A3 BD
+            5E 4F FA B7 0F B8 33 DA B1 CF E7 0E F2 2C 90 F1 60 A1 81 08
+            8B 17 1F EE A6 DA B1 F2 5D AF EE 10 E0 3C 10 74 61
+Exponent: 01 00 01
+
+Signature Length: 256 bytes / 2048 bits
+Signature: 00 97 81 CE BD E7 75 6F AC DE 20 9F 4F 58 D8 69 90 68 AA 15
+           F8 FC 6A 7C 02 DB 42 84 64 BE B0 17 8B 8D 20 A9 F5 26 26 26
+           E8 26 C5 5D 55 4A ED 8C EA 7A CD D9 8D 27 88 4B AA B2 11 5F
+           A9 F5 1B E6 81 17 A5 80 58 67 A5 2B FC 84 72 F7 C0 EB DB F5
+           A2 E7 2B 54 45 E1 A0 E0 86 31 D4 98 78 E7 9C 2D 9D 1D 85 49
+           84 BC 05 B2 28 4E F6 F5 EA 74 50 95 F9 3A 52 A9 91 D2 AC B0
+           33 C6 A5 C7 61 A7 11 7C B1 8E 78 80 8F 52 31 2D 34 2B 30 15
+           72 FC 8C 09 57 8A FE EA FF 2E 1E 6F B7 56 C9 B4 7B D5 C4 AA
+           3A 10 B0 B8 5F 59 2C 7C 91 B8 3A 01 F5 34 C1 92 61 FD FF D6
+           A0 92 40 58 71 A7 20 17 B2 A5 5B D5 9E DB E2 AD 72 EE 83 64
+           CD 50 C0 BF D9 B7 F6 FB 53 30 8C C6 58 D3 9E 34 52 12 F9 65
+           7A 4A 5F 63 8B DC 18 06 10 0A 76 83 8F 75 7B 16 46 32 BE B5
+           95 D7 02 8C 61 E4 E2 E8 42 A0 57 4A FF A4 66 C6 64
+
+Extension: Extended Key Usage (2.5.29.37)
+Critical: 0
+Purpose#1: Web Server Authentication (1.3.6.1.5.5.7.3.1)
+Purpose#2: Web Client Authentication (1.3.6.1.5.5.7.3.2)
+
+
+Extension: Subject Alternative Name (2.5.29.17)
+Critical: 0
+DNS: *.appspot.com
+DNS: *.thinkwithgoogle.com
+DNS: *.withgoogle.com
+DNS: *.withyoutube.com
+DNS: appspot.com
+DNS: thinkwithgoogle.com
+DNS: withgoogle.com
+DNS: withyoutube.com
+
+
+Extension: Authority Information Access (1.3.6.1.5.5.7.1.1)
+Critical: 0
+Method#1: Certificate Authority Issuers
+URI: http://pki.google.com/GIAG2.crt
+Method#2: Online Certificate Status Protocol
+URI: http://clients1.google.com/ocsp
+
+
+Extension: Subject Key Identifier (2.5.29.14)
+Critical: 0
+Subject Key Identifier: 30 C6 45 65 7D 2A 34 04 F9 0C 32 E8 B1 2E 9C 95 9B 4F D3 77
+
+
+Extension: Basic Constraints (2.5.29.19)
+Critical: 1
+
+
+Extension: Authority Key Identifier (2.5.29.35)
+Critical: 0
+Key Identifier: 4A DD 06 16 1B BC F6 68 B5 76 F5 81 B6 BB 62 1A BA 5A 81 2F
+
+
+Extension: Policies (2.5.29.32)
+Critical: 0
+Policy ID #1: 1.3.6.1.4.1.11129.2.5.1
+Policy ID #2: 2.23.140.1.2.2
+
+
+Extension: CRL Distribution Points (2.5.29.31)
+Critical: 0
+URI: http://pki.google.com/GIAG2.crl
+
+
+Fingerprints :
+
+SHA-256 Fingerprint: D7 25 B5 1E 0A 79 45 8D 6A 78 C3 67 A7 FF 1E 15 AA 76 8A C2
+                     68 69 C7 EC 21 92 74 74 E0 19 E1 66
+SHA-1 Fingerprint: E2 65 75 9C 86 64 6A B0 6C BF 23 41 2D 7B FD D6 E8 92 60 C0
+MD5 Fingerprint: 67 85 F3 CD 58 BB 01 BF E6 B3 4A D6 23 98 D4 B0
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>TLS Next Protocols Supported</name><url>google-gruyere.appspot.com</url><parameter>
+The target advertises that the following protocols are
+supported over SSL / TLS :
+
+  grpc-exp
+  h2
+  http/1.1
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>TLS NPN Supported Protocol Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
+NPN Supported Protocols:
+
+  grpc-exp
+  h2
+  http/1.1
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL Certificate Signed Using Weak Hashing Algorithm (Known CA)</name><url>google-gruyere.appspot.com</url><parameter>
+The following known CA certificates were part of the certificate
+chain sent by the remote host, but contain hashes that are considered
+to be weak.
+
+|-Subject             : C=US/O=GeoTrust Inc./CN=GeoTrust Global CA
+|-Signature Algorithm : SHA-1 With RSA Encryption
+|-Valid From          : May 21 04:00:00 2002 GMT
+|-Valid To            : Aug 21 04:00:00 2018 GMT
+
+|-Subject             : C=US/O=Equifax/OU=Equifax Secure Certificate Authority
+|-Signature Algorithm : SHA-1 With RSA Encryption
+|-Valid From          : Aug 22 16:41:51 1998 GMT
+|-Valid To            : Aug 22 16:41:51 2018 GMT
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL Root Certification Authority Certificate Information</name><url>google-gruyere.appspot.com</url><parameter>
+The following root Certification Authority certificate was found :
+
+|-Subject             : C=US/O=Equifax/OU=Equifax Secure Certificate Authority
+|-Issuer              : C=US/O=Equifax/OU=Equifax Secure Certificate Authority
+|-Valid From          : Aug 22 16:41:51 1998 GMT
+|-Valid To            : Aug 22 16:41:51 2018 GMT
+|-Signature Algorithm : SHA-1 With RSA Encryption
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>OpenSSL Detection</name><url>google-gruyere.appspot.com</url><parameter/><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>TLS ALPN Supported Protocol Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
+ALPN Supported Protocols:
+
+  http/1.1
+  h2
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL / TLS Versions Supported</name><url>google-gruyere.appspot.com</url><parameter>
+This port supports TLSv1.0/TLSv1.1/TLSv1.2.
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A web server is running on this port through TLSv1.1.</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A TLSv1.1 server answered on this port.
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus SYN scanner</name><url>google-gruyere.appspot.com</url><parameter>Port 443/tcp was found to be open</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Timeout</name><url>google-gruyere.appspot.com</url><parameter>The following tests timed out without finding any flaw :
+- XSS (on HTTP headers)
+- blind SQL injection
+- directory traversal (extended test)
+- directory traversal
+- arbitrary command execution
+- SQL injection (on HTTP headers)
+- SQL injection
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Accessible Backups</name><url>google-gruyere.appspot.com</url><parameter>
+Nessus was able to identify the following archive file on the
+remote web server :
+
+ZIP Archive :
+   http://172.217.3.212/gruyere-code.zip
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server robots.txt Information Disclosure</name><url>google-gruyere.appspot.com</url><parameter>Contents of robots.txt :
+
+User-agent: *
+Disallow: /0
+Disallow: /1
+Disallow: /2
+Disallow: /3
+Disallow: /4
+Disallow: /5
+Disallow: /6
+Disallow: /7
+Disallow: /8
+Disallow: /9
+Disallow: /start
+Disallow: /resetbutton
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Load Estimation (all tests)</name><url>google-gruyere.appspot.com</url><parameter>Here are the estimated number of requests in miscellaneous modes
+for one method only (GET or POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+on site request forgery                  : S=2          SP=2         AP=2         SC=2         AC=2
+SQL injection                            : S=203        SP=435       AP=435       SC=493       AC=493
+unseen parameters                        : S=245        SP=525       AP=525       SC=595       AC=595
+local file inclusion                     : S=28         SP=60        AP=60        SC=68        AC=68
+web code injection                       : S=7          SP=15        AP=15        SC=17        AC=17
+cookie manipulation                      : S=2          SP=2         AP=2         SC=2         AC=2
+XML injection                            : S=7          SP=15        AP=15        SC=17        AC=17
+format string                            : S=14         SP=30        AP=30        SC=34        AC=34
+script injection                         : S=2          SP=2         AP=2         SC=2         AC=2
+cross-site scripting (comprehensive test): S=147        SP=315       AP=315       SC=357       AC=357
+injectable parameter                     : S=14         SP=30        AP=30        SC=34        AC=34
+cross-site scripting (extended patterns) : S=14         SP=14        AP=14        SC=14        AC=14
+directory traversal (write access)       : S=14         SP=30        AP=30        SC=34        AC=34
+SSI injection                            : S=21         SP=45        AP=45        SC=51        AC=51
+header injection                         : S=4          SP=4         AP=4         SC=4         AC=4
+directory traversal                      : S=203        SP=435       AP=435       SC=493       AC=493
+HTML injection                           : S=10         SP=10        AP=10        SC=10        AC=10
+cross-site scripting (quick test)        : S=11         SP=11        AP=11        SC=11        AC=11
+arbitrary command execution (time based) : S=42         SP=90        AP=90        SC=102       AC=102
+SQL injection (2nd order)                : S=7          SP=15        AP=15        SC=17        AC=17
+persistent XSS                           : S=28         SP=60        AP=60        SC=68        AC=68
+directory traversal (extended test)      : S=357        SP=765       AP=765       SC=867       AC=867
+arbitrary command execution              : S=154        SP=330       AP=330       SC=374       AC=374
+blind SQL injection (4 requests)         : S=28         SP=60        AP=60        SC=68        AC=68
+HTTP response splitting                  : S=18         SP=18        AP=18        SC=18        AC=18
+blind SQL injection                      : S=84         SP=180       AP=180       SC=204       AC=204
+
+All tests                                : S=1666       SP=3498      AP=3498      SC=3956      AC=3956
+
+Here are the estimated number of requests in miscellaneous modes
+for both methods (GET and POST) :
+[Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
+
+on site request forgery                  : S=4          SP=4         AP=4         SC=4         AC=4
+SQL injection                            : S=406        SP=870       AP=870       SC=986       AC=986
+unseen parameters                        : S=490        SP=1050      AP=1050      SC=1190      AC=1190
+local file inclusion                     : S=56         SP=120       AP=120       SC=136       AC=136
+web code injection                       : S=14         SP=30        AP=30        SC=34        AC=34
+cookie manipulation                      : S=4          SP=4         AP=4         SC=4         AC=4
+XML injection                            : S=14         SP=30        AP=30        SC=34        AC=34
+format string                            : S=28         SP=60        AP=60        SC=68        AC=68
+script injection                         : S=4          SP=4         AP=4         SC=4         AC=4
+cross-site scripting (comprehensive test): S=294        SP=630       AP=630       SC=714       AC=714
+injectable parameter                     : S=28         SP=60        AP=60        SC=68        AC=68
+cross-site scripting (extended patterns) : S=28         SP=28        AP=28        SC=28        AC=28
+directory traversal (write access)       : S=28         SP=60        AP=60        SC=68        AC=68
+SSI injection                            : S=42         SP=90        AP=90        SC=102       AC=102
+header injection                         : S=8          SP=8         AP=8         SC=8         AC=8
+directory traversal                      : S=406        SP=870       AP=870       SC=986       AC=986
+HTML injection                           : S=20         SP=20        AP=20        SC=20        AC=20
+cross-site scripting (quick test)        : S=22         SP=22        AP=22        SC=22        AC=22
+arbitrary command execution (time based) : S=84         SP=180       AP=180       SC=204       AC=204
+SQL injection (2nd order)                : S=14         SP=30        AP=30        SC=34        AC=34
+persistent XSS                           : S=56         SP=120       AP=120       SC=136       AC=136
+directory traversal (extended test)      : S=714        SP=1530      AP=1530      SC=1734      AC=1734
+arbitrary command execution              : S=308        SP=660       AP=660       SC=748       AC=748
+blind SQL injection (4 requests)         : S=56         SP=120       AP=120       SC=136       AC=136
+HTTP response splitting                  : S=36         SP=36        AP=36        SC=36        AC=36
+blind SQL injection                      : S=168        SP=360       AP=360       SC=408       AC=408
+
+All tests                                : S=3332       SP=6996      AP=6996      SC=7912      AC=7912
+
+Your mode : all_combinations, GET and POST, thorough tests, Paranoid.
+Maximum number of requests : 7912
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic HTML Injections (quick test)</name><url>google-gruyere.appspot.com</url><parameter>
+Using the GET HTTP method, Nessus found that :
+
++ The following resources may be vulnerable to HTML injection :
+
++ The 'uid' parameter of the /396553048221854312260983266767337236027/snippets.gtl CGI :
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=%00&lt;&lt;&lt;&lt;"jlfalq
+%20&gt;&gt;&gt;
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+.&lt;&lt;&lt;&lt;"jlfalq &gt;&gt;&gt;
+------------------------
+
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Injectable Parameter</name><url>google-gruyere.appspot.com</url><parameter>
+Using the GET HTTP method, Nessus found that :
+
++ The following resources may be vulnerable to injectable parameter :
+
++ The 'uid' parameter of the /396553048221854312260983266767337236027/snippets.gtl CGI :
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=%00ubxtmk
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+.ubxtmk
+------------------------
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=%00ubxtmk&amp;uid=
+cheddar
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+.ubxtmk
+------------------------
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=ubxtmk
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+ubxtmk
+------------------------
+
+/396553048221854312260983266767337236027/snippets.gtl?uid=ubxtmk&amp;uid=che
+ddar
+
+-------- output --------
+&lt;h2 class='has-refresh' id="user_name"&gt;
+
+ubxtmk
+------------------------
+
++ The 'uid' parameter of the /396553048221854312260983266767337236027/saveprofile CGI :
+
+/396553048221854312260983266767337236027/saveprofile?uid=ubxtmk&amp;pw=&amp;is_a
+uthor=True&amp;action=new
+
+-------- output --------
+Content-type: text/html
+Pragma: no-cache
+Set-Cookie: GRUYERE=64786801|ubxtmk||author; path=/396553048221854312260
+983266767337236027
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: 3941a658265a4c2f371fbf7efa9b8127
+------------------------
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic Cookie Injection</name><url>google-gruyere.appspot.com</url><parameter>
+The request string used to detect this flaw was :
+
+/396553048221854312260983266767337236027/&lt;script&gt;document.cookie=%22testhjph=2234;%22&lt;/script&gt;
+
+The output was :
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: 5cb0fcfb3d9d9f3538359b961cdee495
+Date: Tue, 29 Aug 2017 13:38:56 GMT
+Server: Google Frontend
+Content-Length: 2275
+Connection: close
+
+
+[...]
+
+
+
+&lt;div class='message'&gt;Invalid request: /&lt;script&gt;document.cookie="testhjph=2234;"&lt;/script&gt;&lt;/div&gt;
+
+
+[...]
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic XSS</name><url>google-gruyere.appspot.com</url><parameter>------------------------------ Request #1 ------------------------------
+
+The request string used to detect this flaw was :
+
+/396553048221854312260983266767337236027/&lt;script&gt;cross_site_scripting.nasl&lt;/script&gt;.asp
+
+The output was :
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-type: text/html
+Pragma: no-cache
+X-XSS-Protection: 0
+X-Cloud-Trace-Context: 9b2a6776594011da50e4357f996ab61e
+Date: Tue, 29 Aug 2017 13:38:50 GMT
+Server: Google Frontend
+Content-Length: 2281
+Connection: close
+
+
+
+
+&lt;div class='message'&gt;Unrecognized file type (/&lt;script&gt;cross_site_scripti
+ng.nasl&lt;/script&gt;.asp).&lt;/div&gt;
+
+
+
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HyperText Transfer Protocol (HTTP) Information</name><url>google-gruyere.appspot.com</url><parameter>
+Protocol version : HTTP/1.1
+SSL : no
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Cache-Control: no-cache
+  Pragma: no-cache
+  Content-Type: text/html; charset=utf-8
+  X-Cloud-Trace-Context: 8c8573fd6d3c7d41f53487cc3cf4612f
+  Date: Tue, 29 Aug 2017 13:38:36 GMT
+  Server: Google Frontend
+  Content-Length: 11506
+  Connection: close
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HTTP Methods Allowed (per directory)</name><url>google-gruyere.appspot.com</url><parameter>Based on the response to an OPTIONS request :
+
+  - HTTP methods  POST GET are allowed on :
+
+    //0
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    /1
+    /10
+    /2
+    /3
+    /396553048221854312260983266767337236027
+    /4
+    /5
+    /6
+    /7
+    /8
+    /9
+
+  - HTTP method GET is allowed on :
+
+    /
+    /code
+
+
+Based on tests of each method :
+
+  - HTTP methods BCOPY BDELETE BMOVE BPROPFIND BPROPPATCH DEBUG
+    DELETE GET HEAD INDEX NOTIFY OPTIONS ORDERPATCH POLL POST PUT
+    RPC_IN_DATA RPC_OUT_DATA SEARCH SUBSCRIBE UNSUBSCRIBE
+    X-MS-ENUMATTS are allowed on :
+
+    /
+
+  - HTTP methods BCOPY BDELETE BMOVE BPROPFIND BPROPPATCH DEBUG GET
+    INDEX NOTIFY ORDERPATCH POLL POST RPC_IN_DATA RPC_OUT_DATA SEARCH
+    SUBSCRIBE UNSUBSCRIBE X-MS-ENUMATTS are allowed on :
+
+    //0
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    /1
+    /10
+    /2
+    /3
+    /396553048221854312260983266767337236027
+    /4
+    /5
+    /6
+    /7
+    /8
+    /9
+
+  - HTTP methods BCOPY BDELETE BMOVE BPROPFIND BPROPPATCH DEBUG GET
+    INDEX NOTIFY ORDERPATCH POLL RPC_IN_DATA RPC_OUT_DATA SEARCH
+    SUBSCRIBE UNSUBSCRIBE X-MS-ENUMATTS are allowed on :
+
+    /code
+
+  - Invalid/unknown HTTP methods are allowed on :
+
+    /
+    //0
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    /1
+    /10
+    /2
+    /3
+    /396553048221854312260983266767337236027
+    /4
+    /5
+    /6
+    /7
+    /8
+    /9
+    /code
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HTTP Server Type and Version</name><url>google-gruyere.appspot.com</url><parameter>The remote web server type is :
+
+Google Frontend</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Allows Password Auto-Completion</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
+Destination Page: /396553048221854312260983266767337236027/login
+
+Page : /396553048221854312260983266767337236027/newaccount.gtl
+Destination Page: /396553048221854312260983266767337236027/saveprofile
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Transmits Cleartext Credentials</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
+Destination Page: /396553048221854312260983266767337236027/login
+
+Page : /396553048221854312260983266767337236027/newaccount.gtl
+Destination Page: /396553048221854312260983266767337236027/saveprofile
+
+</parameter><cookie/><threat>Low</threat><score>2.6</score><severity>1</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Potentially Vulnerable to Clickjacking</name><url>google-gruyere.appspot.com</url><parameter>
+The following pages do not use a clickjacking mitigation response header and contain a clickable event :
+
+  - http://172.217.3.212/396553048221854312260983266767337236027/
+  - http://172.217.3.212/396553048221854312260983266767337236027/login
+  - http://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - http://172.217.3.212/part1
+  - http://172.217.3.212/part2
+  - http://172.217.3.212/part3
+  - http://172.217.3.212/part4
+  - http://172.217.3.212/part5
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Sitemap</name><url>google-gruyere.appspot.com</url><parameter>
+The following sitemap was created from crawling linkable content on the target host :
+
+  - http://172.217.3.212/
+  - http://172.217.3.212//0
+  - http://172.217.3.212//1
+  - http://172.217.3.212//2
+  - http://172.217.3.212//3
+  - http://172.217.3.212//4
+  - http://172.217.3.212//5
+  - http://172.217.3.212//6
+  - http://172.217.3.212//7
+  - http://172.217.3.212//8
+  - http://172.217.3.212//9
+  - http://172.217.3.212/1
+  - http://172.217.3.212/10
+  - http://172.217.3.212/2
+  - http://172.217.3.212/3
+  - http://172.217.3.212/396553048221854312260983266767337236027/
+  - http://172.217.3.212/396553048221854312260983266767337236027/login
+  - http://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - http://172.217.3.212/396553048221854312260983266767337236027/saveprofile
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - http://172.217.3.212/4
+  - http://172.217.3.212/5
+  - http://172.217.3.212/6
+  - http://172.217.3.212/7
+  - http://172.217.3.212/8
+  - http://172.217.3.212/9
+  - http://172.217.3.212/code
+  - http://172.217.3.212/code/
+  - http://172.217.3.212/code/?data.py
+  - http://172.217.3.212/code/?gruyere.py
+  - http://172.217.3.212/code/?gtl.py
+  - http://172.217.3.212/code/?resoources/dump.gtl
+  - http://172.217.3.212/code/?resources/dump.gtl
+  - http://172.217.3.212/code/?resources/editprofile.gtl
+  - http://172.217.3.212/code/?resources/error.gtl
+  - http://172.217.3.212/code/?resources/feed.gtl
+  - http://172.217.3.212/code/?resources/home.gtl
+  - http://172.217.3.212/code/?resources/manage.gtl
+  - http://172.217.3.212/code/?resources/menubar.gtl
+  - http://172.217.3.212/code/?sanitize.py
+  - http://172.217.3.212/code/data.py
+  - http://172.217.3.212/code/gruyere.py
+  - http://172.217.3.212/code/gtl.py
+  - http://172.217.3.212/code/resources/base.css
+  - http://172.217.3.212/code/resources/dump.gtl
+  - http://172.217.3.212/code/resources/editprofile.gtl
+  - http://172.217.3.212/code/resources/error.gtl
+  - http://172.217.3.212/code/resources/feed.gtl
+  - http://172.217.3.212/code/resources/home.gtl
+  - http://172.217.3.212/code/resources/lib.js
+  - http://172.217.3.212/code/resources/login.gtl
+  - http://172.217.3.212/code/resources/manage.gtl
+  - http://172.217.3.212/code/resources/menubar.gtl
+  - http://172.217.3.212/code/resources/newaccount.gtl
+  - http://172.217.3.212/code/resources/newsnippet.gtl
+  - http://172.217.3.212/code/resources/showprofile.gtl
+  - http://172.217.3.212/code/resources/snippets.gtl
+  - http://172.217.3.212/code/resources/upload.gtl
+  - http://172.217.3.212/code/resources/upload2.gtl
+  - http://172.217.3.212/code/sanitize.py
+  - http://172.217.3.212/code/secret.txt
+  - http://172.217.3.212/gruyere-code.zip
+  - http://172.217.3.212/part1
+  - http://172.217.3.212/part2
+  - http://172.217.3.212/part3
+  - http://172.217.3.212/part4
+  - http://172.217.3.212/part5
+  - http://172.217.3.212/start
+  - http://172.217.3.212/static/codeindex.html
+  - http://172.217.3.212/static/codelab.css
+  - http://172.217.3.212/static/gruyere.png
+
+Attached is a copy of the sitemap file.
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Missing or Permissive X-Frame-Options HTTP Response Header</name><url>google-gruyere.appspot.com</url><parameter>
+The following pages do not set a X-Frame-Options response header or set a permissive policy:
+
+  - http://172.217.3.212/
+  - http://172.217.3.212//0
+  - http://172.217.3.212//1
+  - http://172.217.3.212//2
+  - http://172.217.3.212//3
+  - http://172.217.3.212//4
+  - http://172.217.3.212//5
+  - http://172.217.3.212//6
+  - http://172.217.3.212//7
+  - http://172.217.3.212//8
+  - http://172.217.3.212//9
+  - http://172.217.3.212/1
+  - http://172.217.3.212/10
+  - http://172.217.3.212/2
+  - http://172.217.3.212/3
+  - http://172.217.3.212/396553048221854312260983266767337236027/
+  - http://172.217.3.212/396553048221854312260983266767337236027/login
+  - http://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - http://172.217.3.212/396553048221854312260983266767337236027/saveprofile
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - http://172.217.3.212/4
+  - http://172.217.3.212/5
+  - http://172.217.3.212/6
+  - http://172.217.3.212/7
+  - http://172.217.3.212/8
+  - http://172.217.3.212/9
+  - http://172.217.3.212/code
+  - http://172.217.3.212/code/
+  - http://172.217.3.212/code/?data.py
+  - http://172.217.3.212/code/?gruyere.py
+  - http://172.217.3.212/code/?gtl.py
+  - http://172.217.3.212/code/?resoources/dump.gtl
+  - http://172.217.3.212/code/?resources/dump.gtl
+  - http://172.217.3.212/code/?resources/editprofile.gtl
+  - http://172.217.3.212/code/?resources/error.gtl
+  - http://172.217.3.212/code/?resources/feed.gtl
+  - http://172.217.3.212/code/?resources/home.gtl
+  - http://172.217.3.212/code/?resources/manage.gtl
+  - http://172.217.3.212/code/?resources/menubar.gtl
+  - http://172.217.3.212/code/?sanitize.py
+  - http://172.217.3.212/code/data.py
+  - http://172.217.3.212/code/gruyere.py
+  - http://172.217.3.212/code/gtl.py
+  - http://172.217.3.212/code/resources/base.css
+  - http://172.217.3.212/code/resources/dump.gtl
+  - http://172.217.3.212/code/resources/editprofile.gtl
+  - http://172.217.3.212/code/resources/error.gtl
+  - http://172.217.3.212/code/resources/feed.gtl
+  - http://172.217.3.212/code/resources/home.gtl
+  - http://172.217.3.212/code/resources/lib.js
+  - http://172.217.3.212/code/resources/login.gtl
+  - http://172.217.3.212/code/resources/manage.gtl
+  - http://172.217.3.212/code/resources/menubar.gtl
+  - http://172.217.3.212/code/resources/newaccount.gtl
+  - http://172.217.3.212/code/resources/newsnippet.gtl
+  - http://172.217.3.212/code/resources/showprofile.gtl
+  - http://172.217.3.212/code/resources/snippets.gtl
+  - http://172.217.3.212/code/resources/upload.gtl
+  - http://172.217.3.212/code/resources/upload2.gtl
+  - http://172.217.3.212/code/sanitize.py
+  - http://172.217.3.212/code/secret.txt
+  - http://172.217.3.212/part1
+  - http://172.217.3.212/part2
+  - http://172.217.3.212/part3
+  - http://172.217.3.212/part4
+  - http://172.217.3.212/part5
+  - http://172.217.3.212/start
+  - http://172.217.3.212/static/codeindex.html
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>External URLs</name><url>google-gruyere.appspot.com</url><parameter>
+37 external URLs were gathered on this web server :
+URL...                                  - Seen on...
+
+http://www.json.org/                    - /part2
+https://creativecommons.org/licenses/by-nd/3.0/us/ - /
+https://creativecommons.org/licenses/by/3.0/us/ - /
+
+https://images.google.com/?q=cheddar+cheese - /396553048221854312260983266767337236027/
+https://news.google.com/news/search?q=brie - /396553048221854312260983266767337236027/
+https://portswigger.net/burp/           - /
+https://security.googleblog.com/        - /part5
+https://svn.python.org/projects/python/trunk/Objects/stringobject.c - /part3
+https://www.google.com/about/appsecurity/ - /part5
+https://www.google.com/intl/en/policies/terms/ - /
+https://www.google.com/search?q=%22cross+site+script+inclusion%22 - /part3
+https://www.google.com/search?q=%22defense+in+depth%22+security - /part3
+https://www.google.com/search?q=E4X+markup+security - /part3
+https://www.google.com/search?q=XSS+auto+escaping - /part2
+https://www.google.com/search?q=all+your+base+are+belong+to+us - /part2
+https://www.google.com/search?q=blaster+worm - /part5
+https://www.google.com/search?q=buffer+overflow - /part5
+https://www.google.com/search?q=choosing+a+good+password - /part5
+https://www.google.com/search?q=code+red+worm - /part5
+https://www.google.com/search?q=fuzz+testing - /part5
+https://www.google.com/search?q=http+cookies - /part3
+https://www.google.com/search?q=integer+overflow+vulnerability - /part5
+https://www.google.com/search?q=least+privileges - /part4
+https://www.google.com/search?q=password+hashing - /part5
+https://www.google.com/search?q=preventing+(XSRF+OR+CSRF) - /part3
+https://www.google.com/search?q=same+origin+policy - /part2
+https://www.google.com/search?q=sanitize+html - /part2
+https://www.google.com/search?q=sql+injection - /part5
+https://www.google.com/search?q=sql+slammer - /part5
+https://www.google.com/search?q=understanding+cross-site+scripting - /part2
+https://www.google.com/search?q=unsafe+string+functions - /part4
+https://www.google.com/search?q=utf-7   - /part2
+https://www.kb.cert.org/vuls/           - /part2
+https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project - /
+https://www.python.org/downloads/       - /part1
+https://www.w3.org/TR/html40/index/attributes.html - /part2
+https://xkcd.com/327/                   - /part5
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked Secure</name><url>google-gruyere.appspot.com</url><parameter>
+The following cookie does not set the secure cookie flag :
+
+Name : GRUYERE_ID
+Path : /
+Value : 396553048221854312260983266767337236027
+Domain :
+Version : 1
+Expires :
+Comment :
+Secure : 0
+Httponly : 0
+Port :
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked HttpOnly</name><url>google-gruyere.appspot.com</url><parameter>
+The following cookie does not set the HttpOnly cookie flag :
+
+Name : GRUYERE_ID
+Path : /
+Value : 396553048221854312260983266767337236027
+Domain :
+Version : 1
+Expires :
+Comment :
+Secure : 0
+Httponly : 0
+Port :
+
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Missing or Permissive Content-Security-Policy HTTP Response Header</name><url>google-gruyere.appspot.com</url><parameter>
+The following pages do not set a Content-Security-Policy response header or set a permissive policy:
+
+  - http://172.217.3.212/
+  - http://172.217.3.212//0
+  - http://172.217.3.212//1
+  - http://172.217.3.212//2
+  - http://172.217.3.212//3
+  - http://172.217.3.212//4
+  - http://172.217.3.212//5
+  - http://172.217.3.212//6
+  - http://172.217.3.212//7
+  - http://172.217.3.212//8
+  - http://172.217.3.212//9
+  - http://172.217.3.212/1
+  - http://172.217.3.212/10
+  - http://172.217.3.212/2
+  - http://172.217.3.212/3
+  - http://172.217.3.212/396553048221854312260983266767337236027/
+  - http://172.217.3.212/396553048221854312260983266767337236027/login
+  - http://172.217.3.212/396553048221854312260983266767337236027/newaccount.gtl
+  - http://172.217.3.212/396553048221854312260983266767337236027/saveprofile
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=brie
+  - http://172.217.3.212/396553048221854312260983266767337236027/snippets.gtl?uid=cheddar
+  - http://172.217.3.212/4
+  - http://172.217.3.212/5
+  - http://172.217.3.212/6
+  - http://172.217.3.212/7
+  - http://172.217.3.212/8
+  - http://172.217.3.212/9
+  - http://172.217.3.212/code
+  - http://172.217.3.212/code/
+  - http://172.217.3.212/code/?data.py
+  - http://172.217.3.212/code/?gruyere.py
+  - http://172.217.3.212/code/?gtl.py
+  - http://172.217.3.212/code/?resoources/dump.gtl
+  - http://172.217.3.212/code/?resources/dump.gtl
+  - http://172.217.3.212/code/?resources/editprofile.gtl
+  - http://172.217.3.212/code/?resources/error.gtl
+  - http://172.217.3.212/code/?resources/feed.gtl
+  - http://172.217.3.212/code/?resources/home.gtl
+  - http://172.217.3.212/code/?resources/manage.gtl
+  - http://172.217.3.212/code/?resources/menubar.gtl
+  - http://172.217.3.212/code/?sanitize.py
+  - http://172.217.3.212/code/data.py
+  - http://172.217.3.212/code/gruyere.py
+  - http://172.217.3.212/code/gtl.py
+  - http://172.217.3.212/code/resources/base.css
+  - http://172.217.3.212/code/resources/dump.gtl
+  - http://172.217.3.212/code/resources/editprofile.gtl
+  - http://172.217.3.212/code/resources/error.gtl
+  - http://172.217.3.212/code/resources/feed.gtl
+  - http://172.217.3.212/code/resources/home.gtl
+  - http://172.217.3.212/code/resources/lib.js
+  - http://172.217.3.212/code/resources/login.gtl
+  - http://172.217.3.212/code/resources/manage.gtl
+  - http://172.217.3.212/code/resources/menubar.gtl
+  - http://172.217.3.212/code/resources/newaccount.gtl
+  - http://172.217.3.212/code/resources/newsnippet.gtl
+  - http://172.217.3.212/code/resources/showprofile.gtl
+  - http://172.217.3.212/code/resources/snippets.gtl
+  - http://172.217.3.212/code/resources/upload.gtl
+  - http://172.217.3.212/code/resources/upload2.gtl
+  - http://172.217.3.212/code/sanitize.py
+  - http://172.217.3.212/code/secret.txt
+  - http://172.217.3.212/part1
+  - http://172.217.3.212/part2
+  - http://172.217.3.212/part3
+  - http://172.217.3.212/part4
+  - http://172.217.3.212/part5
+  - http://172.217.3.212/start
+  - http://172.217.3.212/static/codeindex.html
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web mirroring</name><url>google-gruyere.appspot.com</url><parameter>
+Webmirror performed 77 queries in 12s (6.0416 queries per second)
+
+The following CGIs have been discovered :
+
+
++ CGI : /code/
+  Methods : GET
+  Argument :
+   Value: resources/dump.gtl
+
+
++ CGI : /396553048221854312260983266767337236027/snippets.gtl
+  Methods : GET
+  Argument : uid
+   Value: brie
+
+
++ CGI : /396553048221854312260983266767337236027/login
+  Methods : GET
+  Argument : pw
+  Argument : uid
+
+
++ CGI : /396553048221854312260983266767337236027/saveprofile
+  Methods : GET
+  Argument : action
+   Value: new
+  Argument : is_author
+   Value: True
+  Argument : pw
+  Argument : uid
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Directory Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
+The following directories were discovered:
+/1, /10, /2, /3, /4, /5, /6, /7, /8, /9, /code, //0, //1, //2, //3, //4, //5, //6, //7, //8, //9
+
+While this is not, in and of itself, a bug, you should manually inspect
+these directories to ensure that they are in compliance with company
+security standards
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A web server is running on this port.</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus SYN scanner</name><url>google-gruyere.appspot.com</url><parameter>Port 80/tcp was found to be open</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus UDP Scanner</name><url>google-gruyere.appspot.com</url><parameter>The UDP port scan could not complete: The remote host has remained silent for too long
+This might be due to a firewall filtering UDP and/or ICMP packets
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus Scan Information</name><url>google-gruyere.appspot.com</url><parameter>Information about this scan :
+
+Nessus version : 6.11.1
+Plugin feed version : 201706120615
+Scanner edition used : Nessus
+
+ERROR: Your plugins have not been updated since 2017/6/12
+Performing a scan with an older plugin set will yield out-of-date results and
+produce an incomplete audit. Please run nessus-update-plugins to get the
+newest vulnerability checks from Nessus.org.
+
+Scan type : Normal
+Scan policy used : Advanced Scan
+Scanner IP : 10.1.1.8
+Port scanner(s) : nessus_syn_scanner
+Port range : default
+Thorough tests : yes
+Experimental tests : no
+Paranoia level : 2
+Report verbosity : 2
+Safe checks : yes
+Optimize the test : yes
+Credentialed checks : no
+Patch management checks : None
+CGI scanning : enabled
+Web application tests : enabled
+Web app tests -  Test mode : all_combinations
+Web app tests -  Try all HTTP methods : yes
+Web app tests -  Maximum run time : 5 minutes.
+Web app tests -  Stop at first flaw : never
+Max hosts : 30
+Max checks : 5
+Recv timeout : 5
+Backports : None
+Allow post-scan editing: Yes
+Scan Start Date : 2017/8/29 13:21
+Scan duration : 2789 sec
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus Scan Information</name><url>google-gruyere.appspot.com</url><parameter>Information about this scan :
+
+Nessus version : 6.11.1
+Plugin feed version : 201706120615
+Scanner edition used : Nessus
+
+ERROR: Your plugins have not been updated since 2017/6/12
+Performing a scan with an older plugin set will yield out-of-date results and
+produce an incomplete audit. Please run nessus-update-plugins to get the
+newest vulnerability checks from Nessus.org.
+
+Scan type : Normal
+Scan policy used : Advanced Scan
+Scanner IP : 10.1.1.8
+Port scanner(s) : nessus_syn_scanner
+Port range : default
+Thorough tests : yes
+Experimental tests : no
+Paranoia level : 2
+Report verbosity : 2
+Safe checks : yes
+Optimize the test : yes
+Credentialed checks : no
+Patch management checks : None
+CGI scanning : enabled
+Web application tests : enabled
+Web app tests -  Test mode : all_combinations
+Web app tests -  Try all HTTP methods : yes
+Web app tests -  Maximum run time : 5 minutes.
+Web app tests -  Stop at first flaw : never
+Max hosts : 30
+Max checks : 5
+Recv timeout : 5
+Backports : None
+Allow post-scan editing: Yes
+Scan Start Date : 2017/8/29 13:21
+Scan duration : 2804 sec
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Device Type</name><url>google-gruyere.appspot.com</url><parameter>Remote device type : general-purpose
+Confidence level : 54
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Common Platform Enumeration (CPE)</name><url>google-gruyere.appspot.com</url><parameter>
+The remote operating system matched the following CPE's :
+
+  cpe:/o:linux:linux_kernel:2.2
+  cpe:/o:linux:linux_kernel:2.4
+  cpe:/o:linux:linux_kernel:2.6
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>OS Identification</name><url>google-gruyere.appspot.com</url><parameter>
+Remote operating system : Linux Kernel 2.2
+Linux Kernel 2.4
+Linux Kernel 2.6
+Confidence level : 54
+Method : SinFP
+
+
+The remote host is running one of these operating systems :
+Linux Kernel 2.2
+Linux Kernel 2.4
+Linux Kernel 2.6</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Firewall Detection</name><url>google-gruyere.appspot.com</url><parameter/><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>TCP/IP Timestamps Supported</name><url>google-gruyere.appspot.com</url><parameter/><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Inconsistent Hostname and IP Address</name><url>google-gruyere.appspot.com</url><parameter>The host name 'google-gruyere.appspot.com' resolves to 216.58.193.84, not to 172.217.3.212</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Host Fully Qualified Domain Name (FQDN) Resolution</name><url>google-gruyere.appspot.com</url><parameter>
+172.217.3.212 resolves as sea15s12-in-f20.1e100.net.
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability></scanner_vulnerabilities>
