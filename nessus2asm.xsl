@@ -77,59 +77,74 @@ Attack types values:
             <xsl:when test="contains($Attack, 'Web Server robots.txt Information Disclosure')">
               <attack_type>Predictable Resource Location</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attackm 'CGI Generic Tests Load Estimation (all tests)')'>
+            <xsl:when test="contains($Attackm 'CGI Generic Tests Load Estimation (all tests)')">
               <attack_type>Vulnerability Scan</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'HTML Injections')'>
+            <xsl:when test="contains($Attack, 'HTML Injections')">
               <attack_type>Injection Attempt</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'CGI Generic Injectable Parameter')'>
+            <xsl:when test="contains($Attack, 'CGI Generic Injectable Parameter')">
               <attack_type>Injection Attemp</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'HTTP Methods Allowed')'>
+            <xsl:when test="contains($Attack, 'HTTP Methods Allowed')">
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'XSS')'>
+            <xsl:when test="contains($Attack, 'XSS')">
               <attack_type>Cross Site Scripting (XSS)</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Cookie Injection')'>
+            <xsl:when test="contains($Attack, 'Cookie Injection')">
               <attack_type>Injection Attempt</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'HyperText Transfer Protocol (HTTP) Information')'>
+            <xsl:when test="contains($Attack, 'HyperText Transfer Protocol (HTTP) Information')">
               <attack_type>Information Leakage</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'HSTS')'>
+            <xsl:when test="contains($Attack, 'HSTS')">
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'HTTP Server Type and Version')'>
+            <xsl:when test="contains($Attack, 'HTTP Server Type and Version')">
               <attack_type>Information Leakage</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Web Server Allows Password Auto-Completion')'>
+            <xsl:when test="contains($Attack, 'Web Server Allows Password Auto-Completion')">
               <attack_type>Autocomplete not disabled on login form</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Web Application Sitemap')'>
+            <xsl:when test="contains($Attack, 'Web Application Sitemap')">
               <attack_type>Predictable Resource Location</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Clickjacking')'>
+            <xsl:when test="contains($Attack, 'Clickjacking')">
               <attack_type>Clickjacking</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Missing or Permissive X-Frame-Options HTTP Response Header')'>
+            <xsl:when test="contains($Attack, 'Missing or Permissive X-Frame-Options HTTP Response Header')">
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Web mirroring')'>
+            <xsl:when test="contains($Attack, 'Web mirroring')">
               <attack_type>Web Scraping</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Web Server Directory Enumeration')'>
+            <xsl:when test="contains($Attack, 'Web Server Directory Enumeration')">
               <attack_type>Path Traversal</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'SSL')'>
+            <xsl:when test="contains($Attack, 'SSL')">
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'TLS')'>
+            <xsl:when test="contains($Attack, 'TLS')">
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
-            <xsl:when test='contains($Attack, 'Service Detection')'>
+            <xsl:when test="contains($Attack, 'Service Detection')">
               <attack_type>Information Leakage</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'SYN')">
+              <attack_type>Denial of Service</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'CGI Generic Injectable Parameter')">
+              <attack_type>Parameter pollution allowed</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Web Server Transmits Cleartext Credentials')">
+              <attack_type>Logins sent over unencrypted</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Web Application Cookies Not Marked Secure')">
+              <attack_type>Set-Cookie does not use Secure keyword</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Web Application Cookies Not Marked HttpOnly')">
+              <attack_type>Set-Cookie does not use HTTPOnly keyword</attack_type>
             </xsl:when>
             <xsl:otherwise>
               <attack_type>Other Application Attacks</attack_type>
