@@ -25,13 +25,13 @@ HTTP/1.1 200 OK
 -------- vs --------
 ------------------------
 
-</parameter><cookie/><threat>Medium</threat><score>6.8</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Accessible Backups</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Medium</threat><score>6.8</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Web Accessible Backups</name><url>google-gruyere.appspot.com</url><parameter>
 Nessus was able to identify the following archive file on the
 remote web server :
 
 ZIP Archive :
    https://172.217.3.212/gruyere-code.zip
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server robots.txt Information Disclosure</name><url>google-gruyere.appspot.com</url><parameter>Contents of robots.txt :
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Web Server robots.txt Information Disclosure</name><url>google-gruyere.appspot.com</url><parameter>Contents of robots.txt :
 
 User-agent: *
 Disallow: /0
@@ -46,7 +46,7 @@ Disallow: /8
 Disallow: /9
 Disallow: /start
 Disallow: /resetbutton
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Load Estimation (all tests)</name><url>google-gruyere.appspot.com</url><parameter>Here are the estimated number of requests in miscellaneous modes
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Vulnerability Scan</attack_type><name>CGI Generic Tests Load Estimation (all tests)</name><url>google-gruyere.appspot.com</url><parameter>Here are the estimated number of requests in miscellaneous modes
 for one method only (GET or POST) :
 [Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
 
@@ -114,7 +114,7 @@ All tests                                : S=3282       SP=6946      AP=6946    
 
 Your mode : all_combinations, GET and POST, thorough tests, Paranoid.
 Maximum number of requests : 7862
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic HTML Injections (quick test)</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Injection Attempt</attack_type><name>CGI Generic HTML Injections (quick test)</name><url>google-gruyere.appspot.com</url><parameter>
 Using the GET HTTP method, Nessus found that :
 
 + The following resources may be vulnerable to HTML injection :
@@ -130,7 +130,7 @@ Using the GET HTTP method, Nessus found that :
 .&lt;&lt;&lt;&lt;"jlfalq &gt;&gt;&gt;
 ------------------------
 
-</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Injectable Parameter</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Injection Attemp</attack_type><name>CGI Generic Injectable Parameter</name><url>google-gruyere.appspot.com</url><parameter>
 Using the GET HTTP method, Nessus found that :
 
 + The following resources may be vulnerable to injectable parameter :
@@ -269,7 +269,7 @@ Based on tests of each method :
     /8
     /9
     /code
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic XSS</name><url>google-gruyere.appspot.com</url><parameter>------------------------------ Request #1 ------------------------------
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Cross Site Scripting (XSS)</attack_type><name>Web Server Generic XSS</name><url>google-gruyere.appspot.com</url><parameter>------------------------------ Request #1 ------------------------------
 
 The request string used to detect this flaw was :
 
@@ -297,7 +297,7 @@ ng.nasl&lt;/script&gt;.asp).&lt;/div&gt;
 
 
 
-</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic Cookie Injection</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Injection Attempt</attack_type><name>Web Server Generic Cookie Injection</name><url>google-gruyere.appspot.com</url><parameter>
 The request string used to detect this flaw was :
 
 /396553048221854312260983266767337236027/&lt;script&gt;document.cookie=%22testista=9881;%22&lt;/script&gt;
@@ -325,7 +325,7 @@ Connection: close
 
 
 [...]
-</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HyperText Transfer Protocol (HTTP) Information</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Information Leakage</attack_type><name>HyperText Transfer Protocol (HTTP) Information</name><url>google-gruyere.appspot.com</url><parameter>
 Protocol version : HTTP/1.1
 SSL : yes
 Keep-Alive : no
@@ -345,15 +345,15 @@ Headers :
 </parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HSTS Missing From HTTPS Server</name><url>google-gruyere.appspot.com</url><parameter>
   The remote HTTPS server does not send the HTTP
   "Strict-Transport-Security" header.
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HTTP Server Type and Version</name><url>google-gruyere.appspot.com</url><parameter>The remote web server type is :
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Information Leakage</attack_type><name>HTTP Server Type and Version</name><url>google-gruyere.appspot.com</url><parameter>The remote web server type is :
 
-Google Frontend</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Allows Password Auto-Completion</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
+Google Frontend</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Autocomplete not disabled on login form</attack_type><name>Web Server Allows Password Auto-Completion</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
 Destination Page: /396553048221854312260983266767337236027/login
 
 Page : /396553048221854312260983266767337236027/newaccount.gtl
 Destination Page: /396553048221854312260983266767337236027/saveprofile
 
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Sitemap</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Web Application Sitemap</name><url>google-gruyere.appspot.com</url><parameter>
 The following sitemap was created from crawling linkable content on the target host :
 
   - https://172.217.3.212/
@@ -431,7 +431,7 @@ The following sitemap was created from crawling linkable content on the target h
   - https://172.217.3.212/static/gruyere.png
 
 Attached is a copy of the sitemap file.
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Potentially Vulnerable to Clickjacking</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Clickjacking</attack_type><name>Web Application Potentially Vulnerable to Clickjacking</name><url>google-gruyere.appspot.com</url><parameter>
 The following pages do not use a clickjacking mitigation response header and contain a clickable event :
 
   - https://172.217.3.212/396553048221854312260983266767337236027/
@@ -560,7 +560,7 @@ https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project -
 https://www.python.org/downloads/       -
 https://www.w3.org/TR/html40/index/attributes.html -
 https://xkcd.com/327/                   -
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked Secure</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Set-Cookie does not use Secure keyword</attack_type><name>Web Application Cookies Not Marked Secure</name><url>google-gruyere.appspot.com</url><parameter>
 The following cookie does not set the secure cookie flag :
 
 Name : GRUYERE_ID
@@ -574,7 +574,7 @@ Secure : 0
 Httponly : 0
 Port :
 
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked HttpOnly</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Set-Cookie does not use HTTPOnly keyword</attack_type><name>Web Application Cookies Not Marked HttpOnly</name><url>google-gruyere.appspot.com</url><parameter>
 The following cookie does not set the HttpOnly cookie flag :
 
 Name : GRUYERE_ID
@@ -661,7 +661,7 @@ The following pages do not set a Content-Security-Policy response header or set 
   - https://172.217.3.212/resetbutton/396553048221854312260983266767337236027
   - https://172.217.3.212/start
   - https://172.217.3.212/static/codeindex.html
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web mirroring</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Web Scraping</attack_type><name>Web mirroring</name><url>google-gruyere.appspot.com</url><parameter>
 Webmirror performed 79 queries in 14s (5.0642 queries per second)
 
 The following CGIs have been discovered :
@@ -693,7 +693,7 @@ The following CGIs have been discovered :
    Value: True
   Argument : pw
   Argument : uid
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Directory Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Path Traversal</attack_type><name>Web Server Directory Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
 The following directories were discovered:
 /1, /10, /2, /3, /4, /5, /6, /7, /8, /9, /code, //0, //1, //2, //3, //4, //5, //6, //7, //8, //9
 
@@ -986,8 +986,8 @@ ALPN Supported Protocols:
   h2
 </parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>SSL / TLS Versions Supported</name><url>google-gruyere.appspot.com</url><parameter>
 This port supports TLSv1.0/TLSv1.1/TLSv1.2.
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A web server is running on this port through TLSv1.1.</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A TLSv1.1 server answered on this port.
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus SYN scanner</name><url>google-gruyere.appspot.com</url><parameter>Port 443/tcp was found to be open</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Timeout</name><url>google-gruyere.appspot.com</url><parameter>The following tests timed out without finding any flaw :
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Information Leakage</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A web server is running on this port through TLSv1.1.</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Information Leakage</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A TLSv1.1 server answered on this port.
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Denial of Service</attack_type><name>Nessus SYN scanner</name><url>google-gruyere.appspot.com</url><parameter>Port 443/tcp was found to be open</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Timeout</name><url>google-gruyere.appspot.com</url><parameter>The following tests timed out without finding any flaw :
 - XSS (on HTTP headers)
 - blind SQL injection
 - directory traversal (extended test)
@@ -996,13 +996,13 @@ This port supports TLSv1.0/TLSv1.1/TLSv1.2.
 - SQL injection (on HTTP headers)
 - SQL injection
 
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Accessible Backups</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Web Accessible Backups</name><url>google-gruyere.appspot.com</url><parameter>
 Nessus was able to identify the following archive file on the
 remote web server :
 
 ZIP Archive :
    http://172.217.3.212/gruyere-code.zip
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server robots.txt Information Disclosure</name><url>google-gruyere.appspot.com</url><parameter>Contents of robots.txt :
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Web Server robots.txt Information Disclosure</name><url>google-gruyere.appspot.com</url><parameter>Contents of robots.txt :
 
 User-agent: *
 Disallow: /0
@@ -1017,7 +1017,7 @@ Disallow: /8
 Disallow: /9
 Disallow: /start
 Disallow: /resetbutton
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Tests Load Estimation (all tests)</name><url>google-gruyere.appspot.com</url><parameter>Here are the estimated number of requests in miscellaneous modes
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Vulnerability Scan</attack_type><name>CGI Generic Tests Load Estimation (all tests)</name><url>google-gruyere.appspot.com</url><parameter>Here are the estimated number of requests in miscellaneous modes
 for one method only (GET or POST) :
 [Single / Some Pairs / All Pairs / Some Combinations / All Combinations]
 
@@ -1085,7 +1085,7 @@ All tests                                : S=3332       SP=6996      AP=6996    
 
 Your mode : all_combinations, GET and POST, thorough tests, Paranoid.
 Maximum number of requests : 7912
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic HTML Injections (quick test)</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Injection Attempt</attack_type><name>CGI Generic HTML Injections (quick test)</name><url>google-gruyere.appspot.com</url><parameter>
 Using the GET HTTP method, Nessus found that :
 
 + The following resources may be vulnerable to HTML injection :
@@ -1101,7 +1101,7 @@ Using the GET HTTP method, Nessus found that :
 .&lt;&lt;&lt;&lt;"jlfalq &gt;&gt;&gt;
 ------------------------
 
-</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>CGI Generic Injectable Parameter</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Injection Attemp</attack_type><name>CGI Generic Injectable Parameter</name><url>google-gruyere.appspot.com</url><parameter>
 Using the GET HTTP method, Nessus found that :
 
 + The following resources may be vulnerable to injectable parameter :
@@ -1156,7 +1156,7 @@ X-XSS-Protection: 0
 X-Cloud-Trace-Context: 3941a658265a4c2f371fbf7efa9b8127
 ------------------------
 
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic Cookie Injection</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Injection Attempt</attack_type><name>Web Server Generic Cookie Injection</name><url>google-gruyere.appspot.com</url><parameter>
 The request string used to detect this flaw was :
 
 /396553048221854312260983266767337236027/&lt;script&gt;document.cookie=%22testhjph=2234;%22&lt;/script&gt;
@@ -1183,7 +1183,7 @@ Connection: close
 
 
 [...]
-</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Generic XSS</name><url>google-gruyere.appspot.com</url><parameter>------------------------------ Request #1 ------------------------------
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Cross Site Scripting (XSS)</attack_type><name>Web Server Generic XSS</name><url>google-gruyere.appspot.com</url><parameter>------------------------------ Request #1 ------------------------------
 
 The request string used to detect this flaw was :
 
@@ -1210,7 +1210,7 @@ ng.nasl&lt;/script&gt;.asp).&lt;/div&gt;
 
 
 
-</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HyperText Transfer Protocol (HTTP) Information</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Information Leakage</attack_type><name>HyperText Transfer Protocol (HTTP) Information</name><url>google-gruyere.appspot.com</url><parameter>
 Protocol version : HTTP/1.1
 SSL : no
 Keep-Alive : no
@@ -1324,21 +1324,21 @@ Based on tests of each method :
     /8
     /9
     /code
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>HTTP Server Type and Version</name><url>google-gruyere.appspot.com</url><parameter>The remote web server type is :
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Information Leakage</attack_type><name>HTTP Server Type and Version</name><url>google-gruyere.appspot.com</url><parameter>The remote web server type is :
 
-Google Frontend</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Allows Password Auto-Completion</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
+Google Frontend</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Autocomplete not disabled on login form</attack_type><name>Web Server Allows Password Auto-Completion</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
 Destination Page: /396553048221854312260983266767337236027/login
 
 Page : /396553048221854312260983266767337236027/newaccount.gtl
 Destination Page: /396553048221854312260983266767337236027/saveprofile
 
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Transmits Cleartext Credentials</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Logins sent over unencrypted</attack_type><name>Web Server Transmits Cleartext Credentials</name><url>google-gruyere.appspot.com</url><parameter>Page : /396553048221854312260983266767337236027/login
 Destination Page: /396553048221854312260983266767337236027/login
 
 Page : /396553048221854312260983266767337236027/newaccount.gtl
 Destination Page: /396553048221854312260983266767337236027/saveprofile
 
-</parameter><cookie/><threat>Low</threat><score>2.6</score><severity>1</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Potentially Vulnerable to Clickjacking</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Low</threat><score>2.6</score><severity>1</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Clickjacking</attack_type><name>Web Application Potentially Vulnerable to Clickjacking</name><url>google-gruyere.appspot.com</url><parameter>
 The following pages do not use a clickjacking mitigation response header and contain a clickable event :
 
   - http://172.217.3.212/396553048221854312260983266767337236027/
@@ -1351,7 +1351,7 @@ The following pages do not use a clickjacking mitigation response header and con
   - http://172.217.3.212/part3
   - http://172.217.3.212/part4
   - http://172.217.3.212/part5
-</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Sitemap</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Medium</threat><score>4.3</score><severity>2</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Web Application Sitemap</name><url>google-gruyere.appspot.com</url><parameter>
 The following sitemap was created from crawling linkable content on the target host :
 
   - http://172.217.3.212/
@@ -1542,7 +1542,7 @@ https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project - /
 https://www.python.org/downloads/       - /part1
 https://www.w3.org/TR/html40/index/attributes.html - /part2
 https://xkcd.com/327/                   - /part5
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked Secure</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Set-Cookie does not use Secure keyword</attack_type><name>Web Application Cookies Not Marked Secure</name><url>google-gruyere.appspot.com</url><parameter>
 The following cookie does not set the secure cookie flag :
 
 Name : GRUYERE_ID
@@ -1556,7 +1556,7 @@ Secure : 0
 Httponly : 0
 Port :
 
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Application Cookies Not Marked HttpOnly</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Set-Cookie does not use HTTPOnly keyword</attack_type><name>Web Application Cookies Not Marked HttpOnly</name><url>google-gruyere.appspot.com</url><parameter>
 The following cookie does not set the HttpOnly cookie flag :
 
 Name : GRUYERE_ID
@@ -1642,7 +1642,7 @@ The following pages do not set a Content-Security-Policy response header or set 
   - http://172.217.3.212/part5
   - http://172.217.3.212/start
   - http://172.217.3.212/static/codeindex.html
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web mirroring</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Web Scraping</attack_type><name>Web mirroring</name><url>google-gruyere.appspot.com</url><parameter>
 Webmirror performed 77 queries in 12s (6.0416 queries per second)
 
 The following CGIs have been discovered :
@@ -1674,14 +1674,14 @@ The following CGIs have been discovered :
    Value: True
   Argument : pw
   Argument : uid
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Web Server Directory Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Path Traversal</attack_type><name>Web Server Directory Enumeration</name><url>google-gruyere.appspot.com</url><parameter>
 The following directories were discovered:
 /1, /10, /2, /3, /4, /5, /6, /7, /8, /9, /code, //0, //1, //2, //3, //4, //5, //6, //7, //8, //9
 
 While this is not, in and of itself, a bug, you should manually inspect
 these directories to ensure that they are in compliance with company
 security standards
-</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A web server is running on this port.</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus SYN scanner</name><url>google-gruyere.appspot.com</url><parameter>Port 80/tcp was found to be open</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus UDP Scanner</name><url>google-gruyere.appspot.com</url><parameter>The UDP port scan could not complete: The remote host has remained silent for too long
+</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Information Leakage</attack_type><name>Service Detection</name><url>google-gruyere.appspot.com</url><parameter>A web server is running on this port.</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Denial of Service</attack_type><name>Nessus SYN scanner</name><url>google-gruyere.appspot.com</url><parameter>Port 80/tcp was found to be open</parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus UDP Scanner</name><url>google-gruyere.appspot.com</url><parameter>The UDP port scan could not complete: The remote host has remained silent for too long
 This might be due to a firewall filtering UDP and/or ICMP packets
 </parameter><cookie/><threat>Info</threat><score/><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Other Application Attacks</attack_type><name>Nessus Scan Information</name><url>google-gruyere.appspot.com</url><parameter>Information about this scan :
 

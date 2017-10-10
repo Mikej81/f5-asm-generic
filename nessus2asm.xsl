@@ -77,7 +77,7 @@ Attack types values:
             <xsl:when test="contains($Attack, 'Web Server robots.txt Information Disclosure')">
               <attack_type>Predictable Resource Location</attack_type>
             </xsl:when>
-            <xsl:when test="contains($Attackm 'CGI Generic Tests Load Estimation (all tests)')">
+            <xsl:when test="contains($Attack, 'CGI Generic Tests Load Estimation (all tests)')">
               <attack_type>Vulnerability Scan</attack_type>
             </xsl:when>
             <xsl:when test="contains($Attack, 'HTML Injections')">
