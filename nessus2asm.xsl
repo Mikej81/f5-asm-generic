@@ -83,6 +83,27 @@ Attack types values:
             <xsl:when test='contains($Attack, 'HTML Injections')'>
               <attack_type>Injection Attempt</attack_type>
             </xsl:when>
+            <xsl:when test='contains($Attack, 'CGI Generic Injectable Parameter')'>
+              <attack_type>Injection Attemp</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'HTTP Methods Allowed')'>
+              <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'XSS')'>
+              <attack_type>Cross Site Scripting (XSS)</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'Cookie Injection')'>
+              <attack_type>Injection Attempt</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'HyperText Transfer Protocol (HTTP) Information')'>
+              <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'HSTS')'>
+              <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
+            <xsl:when test='contains($Attack, 'HTTP Server Type and Version')'>
+              <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
             <xsl:otherwise>
               <attack_type>Other Application Attacks</attack_type>
           </xsl:otherwise>
