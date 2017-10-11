@@ -179,7 +179,7 @@ Attack types values:
           </xsl:choose>
           <name><xsl:value-of select="plugin_name"/></name>
           <url><xsl:value-of select="$URI"/></url>
-          <parameter><xsl:value-of select="plugin_output"/></parameter>
+          <parameter><xsl:value-of select="plugin_output" disable-output-escaping="yes"/></parameter>
           <cookie></cookie>
           <xsl:variable name="risk" select="risk_factor"/>
           <xsl:choose>
