@@ -89,6 +89,9 @@ Attack types values:
             <xsl:when test="contains($Attack, 'HTTP Methods Allowed')">
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
+            <xsl:when test="contains($Attack, 'SQL Injection')">
+              <attack_type>SQL-Injection</attack_type>
+            </xsl:when>
             <xsl:when test="contains($Attack, 'XSS')">
               <attack_type>Cross Site Scripting (XSS)</attack_type>
             </xsl:when>
@@ -102,6 +105,15 @@ Attack types values:
               <attack_type>Other Application Attacks</attack_type>
             </xsl:when>
             <xsl:when test="contains($Attack, 'HTTP Server Type and Version')">
+              <attack_type>Information Leakage</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Web Server info.php / phpinfo.php Detection')">
+              <attack_type>Information Leakage</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Web Server Office File Inventory')">
+              <attack_type>Information Leakage</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Web Server Harvested Email Addresses')">
               <attack_type>Information Leakage</attack_type>
             </xsl:when>
             <xsl:when test="contains($Attack, 'Web Server Allows Password Auto-Completion')">
@@ -122,8 +134,14 @@ Attack types values:
             <xsl:when test="contains($Attack, 'Web Server Directory Enumeration')">
               <attack_type>Path Traversal</attack_type>
             </xsl:when>
+            <xsl:when test="contains($Attack, 'Path Traversal')">
+              <attack_type>Path Traversal</attack_type>
+            </xsl:when>
             <xsl:when test="contains($Attack, 'SSL')">
               <attack_type>Other Application Attacks</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'RCE')">
+              <attack_type>Server Side Code Injection</attack_type>
             </xsl:when>
             <xsl:when test="contains($Attack, 'TLS')">
               <attack_type>Other Application Attacks</attack_type>
@@ -134,8 +152,14 @@ Attack types values:
             <xsl:when test="contains($Attack, 'SYN')">
               <attack_type>Denial of Service</attack_type>
             </xsl:when>
-            <xsl:when test="contains($Attack, 'CGI Generic Injectable Parameter')">
+            <xsl:when test="contains($Attack, 'DoS')">
+              <attack_type>Denial of Service</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Injectable Parameter')">
               <attack_type>Parameter pollution allowed</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Insecure Permission Escalation')">
+              <attack_type>Authentication/Authorization Attacks</attack_type>
             </xsl:when>
             <xsl:when test="contains($Attack, 'Web Server Transmits Cleartext Credentials')">
               <attack_type>Logins sent over unencrypted</attack_type>
@@ -145,6 +169,9 @@ Attack types values:
             </xsl:when>
             <xsl:when test="contains($Attack, 'Web Application Cookies Not Marked HttpOnly')">
               <attack_type>Set-Cookie does not use HTTPOnly keyword</attack_type>
+            </xsl:when>
+            <xsl:when test="contains($Attack, 'Potentially Sensitive CGI Parameter Detection')">
+              <attack_type>Information Leakage</attack_type>
             </xsl:when>
             <xsl:otherwise>
               <attack_type>Other Application Attacks</attack_type>
