@@ -8,6 +8,10 @@ Generic ASM Vulnerability Schema XSLT
 ## Usage
 Use XSLT transformation tool to convert Web Vulnerability Scan results into an ASM compatible remediation file for import.
 
+```bash
+xsltproc nessus2asm.xsl scan_results.nessus > ASM_Import.xml
+```
+
 [https://devcentral.f5.com/articles/nessus-6-xslt-conversion-for-asm-generic-vulnerability-schema-27632](https://devcentral.f5.com/articles/nessus-6-xslt-conversion-for-asm-generic-vulnerability-schema-27632)
 
 ## Updates
