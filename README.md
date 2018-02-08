@@ -4,6 +4,7 @@ Generic ASM Vulnerability Schema XSLT
 ## Current Translations
 * Nessus 6
 * Netsparker
+* Whitehat
 
 ## Usage
 Use XSLT transformation tool to convert Web Vulnerability Scan results into an ASM compatible remediation file for import.
@@ -20,3 +21,4 @@ xsltproc netsparker2asm.xsl scan_results.xml > Netsparker_Import.xml
 
 ## Updates
 * 10-10-2017 - Added several vulnerability mappings.  Some may have better choices, working off scan results that arent 100% comprehensive but should be a good start.
+* 02-08-2018 - Added some small mappings for Whitehat scans.  Could use some tweaking but baseline is there.
